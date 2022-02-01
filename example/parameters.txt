@@ -1,0 +1,16 @@
+installation_directory: /home/bag2021_2/lec1/installation_directory
+working_directory: /home/bag2021_2/lec1
+folder_name: lec1gen
+genome: /home/bag2021_2/lec1/genome.fa
+annotation: /home/bag2021_2/lec1/genome.gtf
+number_samples: 2
+doble_samples: 4
+chip_1: /home/bag2021_2/lec1/lec1_chip_1.fq.gz
+chip_2: /home/bag2021_2/lec1/lec1_chip_2.fq.gz
+input_1: /home/bag2021_2/lec1/lec1_input_1.fq.gz
+input_2: /home/bag2021_2/lec1/lec1_input_2.fq.gz
+folder_scripts: /home/bag2021_2/lec1/lec1gen/scripts
+number_chain_end: FALSE
+promoter_length: 1000
+selection mv
+transcription_factor: lec1
