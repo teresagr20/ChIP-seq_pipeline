@@ -1,0 +1,1623 @@
+
+	Position file = ../../peak_calling/replicate_1_summits.bed
+	Genome = tair10
+	Output Directory = ./
+	Fragment size set to 100
+	Motif length set at 8,
+	Found mset for "arabidopsis", will check against plants motifs
+	Peak/BED file conversion summary:
+		BED/Header formatted lines: 20023
+		peakfile formatted lines: 0
+
+	Peak File Statistics:
+		Total Peaks: 20023
+		Redundant Peak IDs: 0
+		Peaks lacking information: 0 (need at least 5 columns per peak)
+		Peaks with misformatted coordinates: 0 (should be integer)
+		Peaks with misformatted strand: 0 (should be either +/- or 0/1)
+
+	Peak file looks good!
+
+	Background files for 100 bp fragments found.
+	Custom genome sequence directory: /home/bag2021_2/prr5/homer/.//data/genomes/tair10//
+
+	Extracting sequences from file: /home/bag2021_2/prr5/homer/.//data/genomes/tair10///genome.fa
+	Looking for peak sequences in a single file (/home/bag2021_2/prr5/homer/.//data/genomes/tair10///genome.fa)
+	Extracting 5326 sequences from 1
+	Extracting 3195 sequences from 2
+	Extracting 3911 sequences from 3
+	Extracting 3010 sequences from 4
+	Extracting 4581 sequences from 5
+
+	Not removing redundant sequences
+
+
+	Sequences processed:
+		Auto detected maximum sequence length of 101 bp
+		20023 total
+
+	Frequency Bins: 0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.6 0.7 0.8
+	Freq	Bin	Count
+	0.2	0	87
+	0.25	1	623
+	0.3	2	2292
+	0.35	3	4470
+	0.4	4	5342
+	0.45	5	4152
+	0.5	6	2090
+	0.6	7	949
+	0.7	8	18
+
+	Total sequences set to 50000
+
+	Choosing background that matches in CpG/GC content...
+	Bin	# Targets	# Background	Background Weight
+	0	87	130	1.002
+	1	623	933	1.000
+	2	2292	3431	1.000
+	3	4470	6692	1.000
+	4	5342	7998	1.000
+	5	4152	6216	1.000
+	6	2090	3129	1.000
+	7	949	1421	1.000
+	8	18	27	0.998
+	Assembling sequence file...
+	Normalizing lower order oligos using homer2
+
+	Reading input files...
+	50000 total sequences read
+	Autonormalization: 1-mers (4 total)
+		A	31.17%	31.19%	0.999
+		C	18.83%	18.81%	1.001
+		G	18.83%	18.81%	1.001
+		T	31.17%	31.19%	0.999
+	Autonormalization: 2-mers (16 total)
+		AA	11.56%	11.13%	1.038
+		CA	6.28%	6.38%	0.985
+		GA	6.21%	6.80%	0.913
+		TA	7.10%	6.87%	1.034
+		AC	5.78%	5.30%	1.091
+		CC	3.73%	3.58%	1.041
+		GC	3.12%	3.13%	0.997
+		TC	6.21%	6.80%	0.913
+		AG	5.55%	6.16%	0.901
+		CG	3.26%	2.69%	1.213
+		GG	3.73%	3.58%	1.041
+		TG	6.28%	6.38%	0.985
+		AT	8.28%	8.60%	0.963
+		CT	5.55%	6.16%	0.901
+		GT	5.78%	5.30%	1.091
+		TT	11.56%	11.13%	1.038
+	Autonormalization: 3-mers (64 total)
+	Normalization weights can be found in file: .//seq.autonorm.tsv
+	Converging on autonormalization solution:
+	...............................................................................
+	Final normalization:	Autonormalization: 1-mers (4 total)
+		A	31.17%	31.19%	0.999
+		C	18.83%	18.81%	1.001
+		G	18.83%	18.81%	1.001
+		T	31.17%	31.19%	0.999
+	Autonormalization: 2-mers (16 total)
+		AA	11.56%	11.52%	1.004
+		CA	6.28%	6.28%	1.001
+		GA	6.21%	6.28%	0.989
+		TA	7.10%	7.11%	0.999
+		AC	5.78%	5.70%	1.014
+		CC	3.73%	3.72%	1.003
+		GC	3.12%	3.11%	1.003
+		TC	6.21%	6.28%	0.989
+		AG	5.55%	5.62%	0.988
+		CG	3.26%	3.19%	1.021
+		GG	3.73%	3.72%	1.003
+		TG	6.28%	6.28%	1.001
+		AT	8.28%	8.36%	0.991
+		CT	5.55%	5.62%	0.988
+		GT	5.78%	5.70%	1.014
+		TT	11.56%	11.52%	1.004
+	Autonormalization: 3-mers (64 total)
+	Finished preparing sequence/group files
+
+	----------------------------------------------------------
+	Known motif enrichment
+
+	Reading input files...
+	50000 total sequences read
+	506 motifs loaded
+	Cache length = 11180
+	Using binomial scoring
+	Checking enrichment of 506 motif(s)
+	|0%                                    50%                                  100%|
+	=================================================================================
+	Preparing HTML output with sequence logos...
+		1 of 506 (1e-1266) ABF1(bZIP)/Arabidopsis-ABF1-ChIP-Seq(GSE80564)/Homer
+		2 of 506 (1e-1181) E-box/Arabidopsis-Promoters/Homer
+		3 of 506 (1e-1078) ABI5(bZIP)/col-ABI5-DAP-Seq(GSE60143)/Homer
+		4 of 506 (1e-1076) AREB3(bZIP)/col-AREB3-DAP-Seq(GSE60143)/Homer
+		5 of 506 (1e-1075) bZIP3(bZIP)/col-bZIP3-DAP-Seq(GSE60143)/Homer
+		6 of 506 (1e-1050) bZIP16(bZIP)/colamp-bZIP16-DAP-Seq(GSE60143)/Homer
+		7 of 506 (1e-1043) bZIP68(bZIP)/col-bZIP68-DAP-Seq(GSE60143)/Homer
+		8 of 506 (1e-1042) bZIP53(bZIP)/colamp-bZIP53-DAP-Seq(GSE60143)/Homer
+		9 of 506 (1e-1039) GBF5(bZIP)/colamp-GBF5-DAP-Seq(GSE60143)/Homer
+		10 of 506 (1e-1038) ABF2(bZIP)/col-ABF2-DAP-Seq(GSE60143)/Homer
+		11 of 506 (1e-1028) bZIP48(bZIP)/colamp-bZIP48-DAP-Seq(GSE60143)/Homer
+		12 of 506 (1e-1012) bZIP28(bZIP)/col-bZIP28-DAP-Seq(GSE60143)/Homer
+		13 of 506 (1e-953) bHLH34(bHLH)/colamp-bHLH34-DAP-Seq(GSE60143)/Homer
+		14 of 506 (1e-953) GBF3(bZIP)/Arabidopsis-GBF3-ChIP-Seq(GSE80564)/Homer
+		15 of 506 (1e-942) IBL1(bHLH)/Seedling-IBL1-ChIP-Seq(GSE51120)/Homer
+		16 of 506 (1e-922) GBF6(bZIP)/colamp-GBF6-DAP-Seq(GSE60143)/Homer
+		17 of 506 (1e-891) At4g36780(BZR)/col-At4g36780-DAP-Seq(GSE60143)/Homer
+		18 of 506 (1e-875) At1g78700(BZR)/col-At1g78700-DAP-Seq(GSE60143)/Homer
+		19 of 506 (1e-842) PIF4(bHLH)/Seedling-PIF4-ChIP-Seq(GSE35315)/Homer
+		20 of 506 (1e-806) BIM2(bHLH)/col-BIM2-DAP-Seq(GSE60143)/Homer
+		21 of 506 (1e-781) SPCH(bHLH)/Seedling-SPCH-ChIP-Seq(GSE57497)/Homer
+		22 of 506 (1e-664) GT3a(Trihelix)/col-GT3a-DAP-Seq(GSE60143)/Homer
+		23 of 506 (1e-661) BAM8(BES1)/col-BAM8-DAP-Seq(GSE60143)/Homer
+		24 of 506 (1e-572) At4g18890(BZR)/col-At4g18890-DAP-Seq(GSE60143)/Homer
+		25 of 506 (1e-570) HY5(bZIP)/colamp-HY5-DAP-Seq(GSE60143)/Homer
+		26 of 506 (1e-566) PIF5ox(bHLH)/Arabidopsis-PIF5ox-ChIP-Seq(GSE35062)/Homer
+		27 of 506 (1e-534) PIF7(bHLH)/col-PIF7-DAP-Seq(GSE60143)/Homer
+		28 of 506 (1e-183) bHLH74(bHLH)/col-bHLH74-DAP-Seq(GSE60143)/Homer
+		29 of 506 (1e-176) ATAF1(NAC)/col-ATAF1-DAP-Seq(GSE60143)/Homer
+		30 of 506 (1e-172) BZR1(BZR)/col-BZR1-DAP-Seq(GSE60143)/Homer
+		31 of 506 (1e-156) CAMTA1(CAMTA)/col-CAMTA1-DAP-Seq(GSE60143)/Homer
+		32 of 506 (1e-150) CAMTA5(CAMTA)/col-CAMTA5-DAP-Seq(GSE60143)/Homer
+		33 of 506 (1e-147) bHLH157(bHLH)/col-bHLH157-DAP-Seq(GSE60143)/Homer
+		34 of 506 (1e-141) PCF/Arabidopsis-Promoters/Homer
+		35 of 506 (1e-125) GAGA-repeat/Arabidopsis-Promoters/Homer
+		36 of 506 (1e-123) FRS9(ND)/col-FRS9-DAP-Seq(GSE60143)/Homer
+		37 of 506 (1e-118) BPC1(BBRBPC)/colamp-BPC1-DAP-Seq(GSE60143)/Homer
+		38 of 506 (1e-110) At5g08330(TCP)/col-At5g08330-DAP-Seq(GSE60143)/Homer
+		39 of 506 (1e-92) O2(bZIP)/Corn-O2-ChIP-Seq(GSE63991)/Homer
+		40 of 506 (1e-90) BPC6(BBRBPC)/col-BPC6-DAP-Seq(GSE60143)/Homer
+		41 of 506 (1e-88) dof45(C2C2dof)/col-dof45-DAP-Seq(GSE60143)/Homer
+		42 of 506 (1e-88) BIM1(bHLH)/colamp-BIM1-DAP-Seq(GSE60143)/Homer
+		43 of 506 (1e-88) OBP1(C2C2dof)/col-OBP1-DAP-Seq(GSE60143)/Homer
+		44 of 506 (1e-85) GRF9(GRF)/colamp-GRF9-DAP-Seq(GSE60143)/Homer
+		45 of 506 (1e-85) At5g62940(C2C2dof)/col-At5g62940-DAP-Seq(GSE60143)/Homer
+		46 of 506 (1e-81) At1g72010(TCP)/colamp-At1g72010-DAP-Seq(GSE60143)/Homer
+		47 of 506 (1e-80) BIM3(bHLH)/col-BIM3-DAP-Seq(GSE60143)/Homer
+		48 of 506 (1e-79) AT2G28810(C2C2dof)/colamp-AT2G28810-DAP-Seq(GSE60143)/Homer
+		49 of 506 (1e-79) OBP3(C2C2dof)/col-OBP3-DAP-Seq(GSE60143)/Homer
+		50 of 506 (1e-78) AT3G52440(C2C2dof)/colamp-AT3G52440-DAP-Seq(GSE60143)/Homer
+		51 of 506 (1e-78) AT3G12130(C3H)/colamp-AT3G12130-DAP-Seq(GSE60143)/Homer
+		52 of 506 (1e-78) Adof1(C2C2dof)/col-Adof1-DAP-Seq(GSE60143)/Homer
+		53 of 506 (1e-77) AtGRF6(GRF)/col-AtGRF6-DAP-Seq(GSE60143)/Homer
+		54 of 506 (1e-77) AT5G63260(C3H)/col-AT5G63260-DAP-Seq(GSE60143)/Homer
+		55 of 506 (1e-74) AT5G66940(C2C2dof)/col-AT5G66940-DAP-Seq(GSE60143)/Homer
+		56 of 506 (1e-74) Unknown1/Arabidopsis-Promoters/Homer
+		57 of 506 (1e-72) FHY3(FAR1)/Arabidopsis-FHY3-ChIP-Seq(GSE30711)/Homer
+		58 of 506 (1e-72) AT5G02460(C2C2dof)/col-AT5G02460-DAP-Seq(GSE60143)/Homer
+		59 of 506 (1e-72) COG1(C2C2dof)/col-COG1-DAP-Seq(GSE60143)/Homer
+		60 of 506 (1e-71) At3g45610(C2C2dof)/col-At3g45610-DAP-Seq(GSE60143)/Homer
+		61 of 506 (1e-71) BBX31(Orphan)/col-BBX31-DAP-Seq(GSE60143)/Homer
+		62 of 506 (1e-71) TCP7(TCP)/col-TCP7-DAP-Seq(GSE60143)/Homer
+		63 of 506 (1e-70) At1g14580(C2H2)/colamp-At1g14580-DAP-Seq(GSE60143)/Homer
+		64 of 506 (1e-69) DAG2(C2C2dof)/col-DAG2-DAP-Seq(GSE60143)/Homer
+		65 of 506 (1e-68) IDD7(C2H2)/col-IDD7-DAP-Seq(GSE60143)/Homer
+		66 of 506 (1e-68) dof43(C2C2dof)/colamp-dof43-DAP-Seq(GSE60143)/Homer
+		67 of 506 (1e-67) JKD(C2H2)/col-JKD-DAP-Seq(GSE60143)/Homer
+		68 of 506 (1e-67) ZML1(C2C2gata)/colamp-ZML1-DAP-Seq(GSE60143)/Homer
+		69 of 506 (1e-66) dof24(C2C2dof)/col-dof24-DAP-Seq(GSE60143)/Homer
+		70 of 506 (1e-66) AT1G47655(C2C2dof)/colamp-AT1G47655-DAP-Seq(GSE60143)/Homer
+		71 of 506 (1e-64) MGP(C2H2)/colamp-MGP-DAP-Seq(GSE60143)/Homer
+		72 of 506 (1e-61) bZIP44(bZIP)/colamp-bZIP44-DAP-Seq(GSE60143)/Homer
+		73 of 506 (1e-60) AtIDD11(C2H2)/colamp-AtIDD11-DAP-Seq(GSE60143)/Homer
+		74 of 506 (1e-60) ZIM(C2C2gata)/col-ZIM-DAP-Seq(GSE60143)/Homer
+		75 of 506 (1e-57) bZIP18(bZIP)/colamp-bZIP18-DAP-Seq(GSE60143)/Homer
+		76 of 506 (1e-56) CDF3(C2C2dof)/colamp-CDF3-DAP-Seq(GSE60143)/Homer
+		77 of 506 (1e-54) At5g66730(C2H2)/colamp-At5g66730-DAP-Seq(GSE60143)/Homer
+		78 of 506 (1e-54) NUC(C2H2)/col-NUC-DAP-Seq(GSE60143)/Homer
+		79 of 506 (1e-52) VIP1(bZIP)/col-VIP1-DAP-Seq(GSE60143)/Homer
+		80 of 506 (1e-52) IDD4(C2H2)/col-IDD4-DAP-Seq(GSE60143)/Homer
+		81 of 506 (1e-51) TCP20(TCP)/col-TCP20-DAP-Seq(GSE60143)/Homer
+		82 of 506 (1e-51) IDD2(C2H2)/colamp-IDD2-DAP-Seq(GSE60143)/Homer
+		83 of 506 (1e-51) At1g69690(TCP)/colamp-At1g69690-DAP-Seq(GSE60143)/Homer
+		84 of 506 (1e-48) At1g64620(C2C2dof)/colamp-At1g64620-DAP-Seq(GSE60143)/Homer
+		85 of 506 (1e-47) At4g38000(C2C2dof)/col-At4g38000-DAP-Seq(GSE60143)/Homer
+		86 of 506 (1e-46) bHLH130(bHLH)/col-bHLH130-DAP-Seq(GSE60143)/Homer
+		87 of 506 (1e-45) bZIP52(bZIP)/colamp-bZIP52-DAP-Seq(GSE60143)/Homer
+		88 of 506 (1e-45) HDG1(Homeobox)/col100-HDG1-DAP-Seq(GSE60143)/Homer
+		89 of 506 (1e-45) ANL2(HB)/col-ANL2-DAP-Seq(GSE60143)/Homer
+		90 of 506 (1e-44) OBP4(C2C2dof)/col-OBP4-DAP-Seq(GSE60143)/Homer
+		91 of 506 (1e-44) bZIP69(bZIP)/col-bZIP69-DAP-Seq(GSE60143)/Homer
+		92 of 506 (1e-44) SGR5(C2H2)/colamp-SGR5-DAP-Seq(GSE60143)/Homer
+		93 of 506 (1e-43) IDD5(C2H2)/colamp-IDD5-DAP-Seq(GSE60143)/Homer
+		94 of 506 (1e-43) ANAC047(NAC)/colamp-ANAC047-DAP-Seq(GSE60143)/Homer
+		95 of 506 (1e-43) FAR1(FAR1)/col-FAR1-DAP-Seq(GSE60143)/Homer
+		96 of 506 (1e-42) AT5G59990(C2C2COlike)/colamp-AT5G59990-DAP-Seq(GSE60143)/Homer
+		97 of 506 (1e-40) bHLH18(bHLH)/col-bHLH18-DAP-Seq(GSE60143)/Homer
+		98 of 506 (1e-39) bHLH122(bHLH)/col100-bHLH122-DAP-Seq(GSE60143)/Homer
+		99 of 506 (1e-38) bHLH80(bHLH)/col-bHLH80-DAP-Seq(GSE60143)/Homer
+		100 of 506 (1e-37) FUS3(ABI3VP1)/col-FUS3-DAP-Seq(GSE60143)/Homer
+		101 of 506 (1e-37) AT1G69570(C2C2dof)/col-AT1G69570-DAP-Seq(GSE60143)/Homer
+		102 of 506 (1e-31) ARF2(ARF)/col-ARF2-DAP-Seq(GSE60143)/Homer
+		103 of 506 (1e-30) ANAC079(NAC)/colamp-ANAC079-DAP-Seq(GSE60143)/Homer
+		104 of 506 (1e-30) ATHB21(HB)/colamp-ATHB21-DAP-Seq(GSE60143)/Homer
+		105 of 506 (1e-29) TGA6(bZIP)/colamp-TGA6-DAP-Seq(GSE60143)/Homer
+		106 of 506 (1e-28) MYB3R5(MYB)/col-MYB3R5-DAP-Seq(GSE60143)/Homer
+		107 of 506 (1e-28) bZIP50(bZIP)/colamp-bZIP50-DAP-Seq(GSE60143)/Homer
+		108 of 506 (1e-27) ANAC038(NAC)/col-ANAC038-DAP-Seq(GSE60143)/Homer
+		109 of 506 (1e-27) WRKY25(WRKY)/colamp-WRKY25-DAP-Seq(GSE60143)/Homer
+		110 of 506 (1e-27) ATHB13(Homeobox)/col-ATHB13-DAP-Seq(GSE60143)/Homer
+		111 of 506 (1e-26) WRKY22(WRKY)/colamp-WRKY22-DAP-Seq(GSE60143)/Homer
+		112 of 506 (1e-26) WRKY6(WRKY)/colamp-WRKY6-DAP-Seq(GSE60143)/Homer
+		113 of 506 (1e-25) MYB118(MYB)/colamp-MYB118-DAP-Seq(GSE60143)/Homer
+		114 of 506 (1e-25) WRKY27(WRKY)/colamp-WRKY27-DAP-Seq(GSE60143)/Homer
+		115 of 506 (1e-25) AT1G77200(AP2EREBP)/colamp-AT1G77200-DAP-Seq(GSE60143)/Homer
+		116 of 506 (1e-24) MYB98(MYB)/col-MYB98-DAP-Seq(GSE60143)/Homer
+		117 of 506 (1e-24) TCP16(TCP)/colamp-TCP16-DAP-Seq(GSE60143)/Homer
+		118 of 506 (1e-24) MYB119(MYB)/colamp-MYB119-DAP-Seq(GSE60143)/Homer
+		119 of 506 (1e-23) Unknown3/Arabidopsis-Promoters/Homer
+		120 of 506 (1e-23) WRKY55(WRKY)/col-WRKY55-DAP-Seq(GSE60143)/Homer
+		121 of 506 (1e-23) TGA4(bZIP)/colamp-TGA4-DAP-Seq(GSE60143)/Homer
+		122 of 506 (1e-23) MYB77(MYB)/col-MYB77-DAP-Seq(GSE60143)/Homer
+		123 of 506 (1e-22) WRKY29(WRKY)/colamp-WRKY29-DAP-Seq(GSE60143)/Homer
+		124 of 506 (1e-22) LMI1(HB)/colamp-LMI1-DAP-Seq(GSE60143)/Homer
+		125 of 506 (1e-21) At1g76110(ARID)/colamp-At1g76110-DAP-Seq(GSE60143)/Homer
+		126 of 506 (1e-21) WRKY18(WRKY)/col-WRKY18-DAP-Seq(GSE60143)/Homer
+		127 of 506 (1e-21) AT4G27900(C2C2COlike)/col-AT4G27900-DAP-Seq(GSE60143)/Homer
+		128 of 506 (1e-21) MYB3R4(MYB)/col-MYB3R4-DAP-Seq(GSE60143)/Homer
+		129 of 506 (1e-21) ATY13(MYB)/col-ATY13-DAP-Seq(GSE60143)/Homer
+		130 of 506 (1e-20) WRKY20(WRKY)/col-WRKY20-DAP-Seq(GSE60143)/Homer
+		131 of 506 (1e-20) WRKY15(WRKY)/col-WRKY15-DAP-Seq(GSE60143)/Homer
+		132 of 506 (1e-20) WRKY75(WRKY)/col-WRKY75-DAP-Seq(GSE60143)/Homer
+		133 of 506 (1e-20) WRKY26(WRKY)/colamp-WRKY26-DAP-Seq(GSE60143)/Homer
+		134 of 506 (1e-20) NAP(NAC)/col-NAP-DAP-Seq(GSE60143)/Homer
+		135 of 506 (1e-20) TGA10(bZIP)/colamp-TGA10-DAP-Seq(GSE60143)/Homer
+		136 of 506 (1e-20) WRKY31(WRKY)/colamp-WRKY31-DAP-Seq(GSE60143)/Homer
+		137 of 506 (1e-20) TGA2(bZIP)/colamp-TGA2-DAP-Seq(GSE60143)/Homer
+		138 of 506 (1e-20) WRKY28(WRKY)/col-WRKY28-DAP-Seq(GSE60143)/Homer
+		139 of 506 (1e-19) WRKY71(WRKY)/col-WRKY71-DAP-Seq(GSE60143)/Homer
+		140 of 506 (1e-19) WRKY3(WRKY)/col-WRKY3-DAP-Seq(GSE60143)/Homer
+		141 of 506 (1e-19) NLP7(RWPRK)/col-NLP7-DAP-Seq(GSE60143)/Homer
+		142 of 506 (1e-19) WRKY65(WRKY)/colamp-WRKY65-DAP-Seq(GSE60143)/Homer
+		143 of 506 (1e-19) At1g74840(MYBrelated)/col100-At1g74840-DAP-Seq(GSE60143)/Homer
+		144 of 506 (1e-19) WRKY33(WRKY)/col-WRKY33-DAP-Seq(GSE60143)/Homer
+		145 of 506 (1e-19) ATHB53(HB)/col-ATHB53-DAP-Seq(GSE60143)/Homer
+		146 of 506 (1e-19) WRKY43(WRKY)/colamp-WRKY43-DAP-Seq(GSE60143)/Homer
+		147 of 506 (1e-18) WRKY8(WRKY)/colamp-WRKY8-DAP-Seq(GSE60143)/Homer
+		148 of 506 (1e-18) ATHB5(HB)/colamp-ATHB5-DAP-Seq(GSE60143)/Homer
+		149 of 506 (1e-17) WRKY40(WRKY)/colamp-WRKY40-DAP-Seq(GSE60143)/Homer
+		150 of 506 (1e-17) WRKY21(WRKY)/colamp-WRKY21-DAP-Seq(GSE60143)/Homer
+		151 of 506 (1e-17) TCP1(TCP)/col-TCP1-DAP-Seq(GSE60143)/Homer
+		152 of 506 (1e-17) HDG7(HB)/col-HDG7-DAP-Seq(GSE60143)/Homer
+		153 of 506 (1e-17) ATHB6(Homeobox)/col-ATHB6-DAP-Seq(GSE60143)/Homer
+		154 of 506 (1e-17) WRKY24(WRKY)/colamp-WRKY24-DAP-Seq(GSE60143)/Homer
+		155 of 506 (1e-17) AT4G00250(GeBP)/col-AT4G00250-DAP-Seq(GSE60143)/Homer
+		156 of 506 (1e-16) NAM(NAC)/col-NAM-DAP-Seq(GSE60143)/Homer
+		157 of 506 (1e-16) AT5G56840(MYBrelated)/colamp-AT5G56840-DAP-Seq(GSE60143)/Homer
+		158 of 506 (1e-16) CBF4(AP2EREBP)/colamp-CBF4-DAP-Seq(GSE60143)/Homer
+		159 of 506 (1e-16) TGA9(bZIP)/colamp-TGA9-DAP-Seq(GSE60143)/Homer
+		160 of 506 (1e-16) MYB65(MYB)/colamp-MYB65-DAP-Seq(GSE60143)/Homer
+		161 of 506 (1e-16) At1g19000(MYBrelated)/colamp-At1g19000-DAP-Seq(GSE60143)/Homer
+		162 of 506 (1e-16) At2g45680(TCP)/colamp-At2g45680-DAP-Seq(GSE60143)/Homer
+		163 of 506 (1e-16) WRKY14(WRKY)/colamp-WRKY14-DAP-Seq(GSE60143)/Homer
+		164 of 506 (1e-15) Rap210(AP2EREBP)/col-Rap210-DAP-Seq(GSE60143)/Homer
+		165 of 506 (1e-15) AT3G60490(AP2EREBP)/colamp-AT3G60490-DAP-Seq(GSE60143)/Homer
+		166 of 506 (1e-15) At5g47390(MYBrelated)/col-At5g47390-DAP-Seq(GSE60143)/Homer
+		167 of 506 (1e-14) TCP3(TCP)/colamp-TCP3-DAP-Seq(GSE60143)/Homer
+		168 of 506 (1e-14) CBF1(AP2EREBP)/colamp-CBF1-DAP-Seq(GSE60143)/Homer
+		169 of 506 (1e-14) bHLH10(bHLH)/colamp-bHLH10-DAP-Seq(GSE60143)/Homer
+		170 of 506 (1e-14) AT3G16280(AP2EREBP)/colamp-AT3G16280-DAP-Seq(GSE60143)/Homer
+		171 of 506 (1e-14) TINY(AP2EREBP)/col-TINY-DAP-Seq(GSE60143)/Homer
+		172 of 506 (1e-14) ANAC046(NAC)/colamp-ANAC046-DAP-Seq(GSE60143)/Homer
+		173 of 506 (1e-14) AZF1(C2H2)/colamp-AZF1-DAP-Seq(GSE60143)/Homer
+		174 of 506 (1e-14) AT3G51470(DBP)/col-AT3G51470-DAP-Seq(GSE60143)/Homer
+		175 of 506 (1e-14) DEAR3(AP2EREBP)/colamp-DEAR3-DAP-Seq(GSE60143)/Homer
+		176 of 506 (1e-13) WRKY11(WRKY)/col-WRKY11-DAP-Seq(GSE60143)/Homer
+		177 of 506 (1e-13) TF3A(C2H2)/col-TF3A-DAP-Seq(GSE60143)/Homer
+		178 of 506 (1e-13) WRKY45(WRKY)/col-WRKY45-DAP-Seq(GSE60143)/Homer
+		179 of 506 (1e-13) ERF38(AP2EREBP)/col-ERF38-DAP-Seq(GSE60143)/Homer
+		180 of 506 (1e-13) ATHB7(Homeobox)/col-ATHB7-DAP-Seq(GSE60143)/Homer
+		181 of 506 (1e-13) ATHB33(ZFHD)/col-ATHB33-DAP-Seq(GSE60143)/Homer
+		182 of 506 (1e-12) DDF1(AP2EREBP)/col-DDF1-DAP-Seq(GSE60143)/Homer
+		183 of 506 (1e-12) MYB3R1(MYB)/col-MYB3R1-DAP-Seq(GSE60143)/Homer
+		184 of 506 (1e-12) MYB73(MYB)/col-MYB73-DAP-Seq(GSE60143)/Homer
+		185 of 506 (1e-12) AT5G61620(MYBrelated)/colamp-AT5G61620-DAP-Seq(GSE60143)/Homer
+		186 of 506 (1e-12) FEA4(bZIP)/Corn-FEA4-ChIP-Seq(GSE61954)/Homer
+		187 of 506 (1e-12) At5g58900(MYBrelated)/colamp-At5g58900-DAP-Seq(GSE60143)/Homer
+		188 of 506 (1e-12) WRKY42(WRKY)/colamp-WRKY42-DAP-Seq(GSE60143)/Homer
+		189 of 506 (1e-12) At2g44940(AP2EREBP)/colamp-At2g44940-DAP-Seq(GSE60143)/Homer
+		190 of 506 (1e-12) At3g60580(C2H2)/col-At3g60580-DAP-Seq(GSE60143)/Homer
+		191 of 506 (1e-12) CEJ1(AP2EREBP)/col-CEJ1-DAP-Seq(GSE60143)/Homer
+		192 of 506 (1e-11) bZIP42(bZIP)/colamp-bZIP42-DAP-Seq(GSE60143)/Homer
+		193 of 506 (1e-11) ATHB40(HB)/col-ATHB40-DAP-Seq(GSE60143)/Homer
+		194 of 506 (1e-11) WRKY50(WRKY)/col-WRKY50-DAP-Seq(GSE60143)/Homer
+		195 of 506 (1e-11) At4g16750(AP2EREBP)/col-At4g16750-DAP-Seq(GSE60143)/Homer
+		196 of 506 (1e-11) WRKY30(WRKY)/colamp-WRKY30-DAP-Seq(GSE60143)/Homer
+		197 of 506 (1e-10) AT1G12630(AP2EREBP)/colamp-AT1G12630-DAP-Seq(GSE60143)/Homer
+		198 of 506 (1e-10) ATHB6(Homeobox)/Arabidopsis-HB6-ChIP-Seq(GSE80564)/Homer
+		199 of 506 (1e-10) At3g11280(MYBrelated)/col-At3g11280-DAP-Seq(GSE60143)/Homer
+		200 of 506 (1e-10) WRKY47(WRKY)/colamp-WRKY47-DAP-Seq(GSE60143)/Homer
+		201 of 506 (1e-9) MYB30(MYB)/colamp-MYB30-DAP-Seq(GSE60143)/Homer
+		202 of 506 (1e-9) At1g36060(AP2EREBP)/colamp-At1g36060-DAP-Seq(GSE60143)/Homer
+		203 of 506 (1e-9) MYB94(MYB)/col-MYB94-DAP-Seq(GSE60143)/Homer
+		204 of 506 (1e-9) RIN(MADS)/Tomato-RIN-ChIP-Seq(GSE116581)/Homer
+		205 of 506 (1e-9) WRKY46(WRKY)/colamp-WRKY46-DAP-Seq(GSE60143)/Homer
+		206 of 506 (1e-9) At4g32800(AP2EREBP)/colamp-At4g32800-DAP-Seq(GSE60143)/Homer
+		207 of 506 (1e-9) AT3G42860(zfGRF)/col-AT3G42860-DAP-Seq(GSE60143)/Homer
+		208 of 506 (1e-9) MYB96(MYB)/colamp-MYB96-DAP-Seq(GSE60143)/Homer
+		209 of 506 (1e-9) TAGL1(MADS)/Tomato-TAGL1-ChIP-Seq(GSE116581)/Homer
+		210 of 506 (1e-9) CBF2(AP2EREBP)/colamp-CBF2-DAP-Seq(GSE60143)/Homer
+		211 of 506 (1e-9) CBF3(AP2EREBP)/colamp-CBF3-DAP-Seq(GSE60143)/Homer
+		212 of 506 (1e-8) ATHB20(Homeobox)/colamp-ATHB20-DAP-Seq(GSE60143)/Homer
+		213 of 506 (1e-8) MYB101(MYB)/colamp-MYB101-DAP-Seq(GSE60143)/Homer
+		214 of 506 (1e-8) HAT2(Homeobox)/colamp-HAT2-DAP-Seq(GSE60143)/Homer
+		215 of 506 (1e-8) At5g05790(MYBrelated)/col-At5g05790-DAP-Seq(GSE60143)/Homer
+		216 of 506 (1e-8) TGA1(bZIP)/colamp-TGA1-DAP-Seq(GSE60143)/Homer
+		217 of 506 (1e-8) dof42(C2C2dof)/col-dof42-DAP-Seq(GSE60143)/Homer
+		218 of 506 (1e-8) MYB70(MYB)/col-MYB70-DAP-Seq(GSE60143)/Homer
+		219 of 506 (1e-8) ATHB34(ZFHD)/colamp-ATHB34-DAP-Seq(GSE60143)/Homer
+		220 of 506 (1e-8) HAT5(Homeobox)/colamp-HAT5-DAP-Seq(GSE60143)/Homer
+		221 of 506 (1e-8) MYB88(MYB)/col-MYB88-DAP-Seq(GSE60143)/Homer
+		222 of 506 (1e-8) AT1G20910(ARID)/col-AT1G20910-DAP-Seq(GSE60143)/Homer
+		223 of 506 (1e-8) At5g08520(MYBrelated)/colamp-At5g08520-DAP-Seq(GSE60143)/Homer
+		224 of 506 (1e-7) At1g49010(MYBrelated)/col-At1g49010-DAP-Seq(GSE60143)/Homer
+		225 of 506 (1e-7) ATHB23(ZFHD)/col-ATHB23-DAP-Seq(GSE60143)/Homer
+		226 of 506 (1e-7) DREB2(AP2EREBP)/col-DREB2-DAP-Seq(GSE60143)/Homer
+		227 of 506 (1e-7) PTF1(TCP)/colamp-PTF1-DAP-Seq(GSE60143)/Homer
+		228 of 506 (1e-7) At1g22810(AP2EREBP)/colamp-At1g22810-DAP-Seq(GSE60143)/Homer
+		229 of 506 (1e-7) DEAR2(AP2EREBP)/colamp-DEAR2-DAP-Seq(GSE60143)/Homer
+		230 of 506 (1e-7) LCL1(MYBrelated)/colamp-LCL1-DAP-Seq(GSE60143)/Homer
+		231 of 506 (1e-7) MYB81(MYB)/col-MYB81-DAP-Seq(GSE60143)/Homer
+		232 of 506 (1e-7) AT2G28920(ND)/col-AT2G28920-DAP-Seq(GSE60143)/Homer
+		233 of 506 (1e-6) RAP21(AP2EREBP)/colamp-RAP21-DAP-Seq(GSE60143)/Homer
+		234 of 506 (1e-6) SEP3(MADS)/Arabidoposis-Flower-Sep3-ChIP-Seq/Homer
+		235 of 506 (1e-6) Knotted(Homeobox)/Corn-KN1-ChIP-Seq(GSE39161)/Homer
+		236 of 506 (1e-6) RVE1(MYBrelated)/col-RVE1-DAP-Seq(GSE60143)/Homer
+		237 of 506 (1e-6) ATHB24(ZFHD)/colamp-ATHB24-DAP-Seq(GSE60143)/Homer
+		238 of 506 (1e-6) bHLH28(bHLH)/col-bHLH28-DAP-Seq(GSE60143)/Homer
+		239 of 506 (1e-6) At5g04390(C2H2)/col200-At5g04390-DAP-Seq(GSE60143)/Homer
+		240 of 506 (1e-6) DDF2(AP2EREBP)/col-DDF2-DAP-Seq(GSE60143)/Homer
+		241 of 506 (1e-6) ATHB25(ZFHD)/colamp-ATHB25-DAP-Seq(GSE60143)/Homer
+		242 of 506 (1e-6) EPR1(MYBrelated)/colamp-EPR1-DAP-Seq(GSE60143)/Homer
+		243 of 506 (1e-6) LHY1(MYBrelated)/col-LHY1-DAP-Seq(GSE60143)/Homer
+		244 of 506 (1e-6) PLT1(AP2EREBP)/colamp-PLT1-DAP-Seq(GSE60143)/Homer
+		245 of 506 (1e-5) MYB3(MYB)/Arabidopsis-MYB3-ChIP-Seq(GSE80564)/Homer
+		246 of 506 (1e-5) AT3G10113(MYBrelated)/col-AT3G10113-DAP-Seq(GSE60143)/Homer
+		247 of 506 (1e-5) At4g28140(AP2EREBP)/colamp-At4g28140-DAP-Seq(GSE60143)/Homer
+		248 of 506 (1e-5) Replumless(BLH)/Arabidopsis-RPL.GFP-ChIP-Seq(GSE78727)/Homer
+		249 of 506 (1e-5) MYB17(MYB)/colamp-MYB17-DAP-Seq(GSE60143)/Homer
+		250 of 506 (1e-4) AGL63(MADS)/col-AGL63-DAP-Seq(GSE60143)/Homer
+		251 of 506 (1e-4) SPL14(SBP)/col-SPL14-DAP-Seq(GSE60143)/Homer
+		252 of 506 (1e-4) At3g09600(MYBrelated)/colamp-At3g09600-DAP-Seq(GSE60143)/Homer
+		253 of 506 (1e-4) SPL13(SBP)/col-SPL13-DAP-Seq(GSE60143)/Homer
+		254 of 506 (1e-4) AT3G10030(Trihelix)/colamp-AT3G10030-DAP-Seq(GSE60143)/Homer
+		255 of 506 (1e-4) MYB56(MYB)/colamp-MYB56-DAP-Seq(GSE60143)/Homer
+		256 of 506 (1e-4) TCP17(TCP)/col-TCP17-DAP-Seq(GSE60143)/Homer
+		257 of 506 (1e-4) At1g19210(AP2EREBP)/colamp-At1g19210-DAP-Seq(GSE60143)/Homer
+		258 of 506 (1e-4) AtHB32(ZFHD)/col200-AtHB32-DAP-Seq(GSE60143)/Homer
+		259 of 506 (1e-4) At4g31060(AP2EREBP)/colamp-At4g31060-DAP-Seq(GSE60143)/Homer
+		260 of 506 (1e-3) At4g01280(MYBrelated)/colamp-At4g01280-DAP-Seq(GSE60143)/Homer
+		261 of 506 (1e-3) MYB39(MYB)/col-MYB39-DAP-Seq(GSE60143)/Homer
+		262 of 506 (1e-3) MYB41(MYB)/col-MYB41-DAP-Seq(GSE60143)/Homer
+		263 of 506 (1e-3) LBD23(LOBAS2)/colamp-LBD23-DAP-Seq(GSE60143)/Homer
+		264 of 506 (1e-3) ATHB18(Homeobox)/colamp-ATHB18-DAP-Seq(GSE60143)/Homer
+		265 of 506 (1e-3) STZ(C2H2)/colamp-STZ-DAP-Seq(GSE60143)/Homer
+		266 of 506 (1e-3) KANADI1(Myb)/Seedling-KAN1-ChIP-Seq(GSE48081)/Homer
+		267 of 506 (1e-3) SRS7(SRS)/colamp-SRS7-DAP-Seq(GSE60143)/Homer
+		268 of 506 (1e-3) At5g52660(MYBrelated)/colamp-At5g52660-DAP-Seq(GSE60143)/Homer
+		269 of 506 (1e-2) SPL5(SBP)/colamp-SPL5-DAP-Seq(GSE60143)/Homer
+		270 of 506 (1e-2) DEAR5(AP2EREBP)/col-DEAR5-DAP-Seq(GSE60143)/Homer
+		271 of 506 (1e-2) AGL25(MADS)/colamp-AGL25-DAP-Seq(GSE60143)/Homer
+		272 of 506 (1e-2) MYB10(MYB)/col-MYB10-DAP-Seq(GSE60143)/Homer
+		273 of 506 (1e-2) MYB40(MYB)/col-MYB40-DAP-Seq(GSE60143)/Homer
+		274 of 506 (1e-2) AT1G04880(ARID)/colamp-AT1G04880-DAP-Seq(GSE60143)/Homer
+		275 of 506 (1e-2) SVP(MADS)/col-SVP-DAP-Seq(GSE60143)/Homer
+		276 of 506 (1e-2) MYB51(MYB)/col-MYB51-DAP-Seq(GSE60143)/Homer
+		277 of 506 (1e-2) MYB33(MYB)/col-MYB33-DAP-Seq(GSE60143)/Homer
+		278 of 506 (1e-2) DREB19(AP2EREBP)/colamp-DREB19-DAP-Seq(GSE60143)/Homer
+		279 of 506 (1e-2) LBD18(LOBAS2)/colamp-LBD18-DAP-Seq(GSE60143)/Homer
+		280 of 506 (1e-2) MYB93(MYB)/colamp-MYB93-DAP-Seq(GSE60143)/Homer
+		281 of 506 (1e-2) E2FA(E2FDP)/colamp-E2FA-DAP-Seq(GSE60143)/Homer
+		282 of 506 (1e-2) GATA12(C2C2gata)/col-GATA12-DAP-Seq(GSE60143)/Homer
+		283 of 506 (1e-2) SOC1(MADS)/Seedling-SOC1-ChIP-Seq(GSE45846)/Homer
+		284 of 506 (1e-2) MYB63(MYB)/col-MYB63-DAP-Seq(GSE60143)/Homer
+		285 of 506 (1e-2) GATA6(C2C2gata)/col200-GATA6-DAP-Seq(GSE60143)/Homer
+		286 of 506 (1e-2) GATA1(C2C2gata)/colamp-GATA1-DAP-Seq(GSE60143)/Homer
+		287 of 506 (1e-2) CCA(Myb)/Arabidopsis-CCA.GFP-ChIP-Seq(GSE70533)/Homer
+		288 of 506 (1e-2) WRKY17(WRKY)/colamp-WRKY17-DAP-Seq(GSE60143)/Homer
+	----------------------------------------------------------
+	De novo motif finding (HOMER)
+
+	Scanning input files...
+	Parsing sequences...
+	|0%                                   50%                                  100%|
+	===============================================================================
+	Total number of Oligos: 32896
+	Autoadjustment for sequence coverage in background: 1.00x
+
+	Oligos: 32896 of 34497 max
+	Tree  : 66876 of 172485 max
+	Optimizing memory usage...
+	Cache length = 11180
+	Using binomial scoring
+
+	Global Optimization Phase: Looking for enriched oligos with up to 2 mismatches...
+
+	Screening oligos 32896 (allowing 0 mismatches):
+	|0%                                   50%                                  100%|
+	================================================================================
+		0.08% skipped, 99.92% checked (32869 of 32896), of those checked:
+		0.08% not in target, 0.00% increased p-value, 0.00% high p-value
+
+	Screening oligos 32896 (allowing 1 mismatches):
+	|0%                                   50%                                  100%|
+	================================================================================
+		0.08% skipped, 99.92% checked (32869 of 32896), of those checked:
+		0.00% not in target, 56.35% increased p-value, 55.63% high p-value
+
+	Screening oligos 32896 (allowing 2 mismatches):
+	|0%                                   50%                                  100%|
+	================================================================================
+		69.00% skipped, 31.00% checked (10197 of 32896), of those checked:
+		0.00% not in target, 10.51% increased p-value, 0.00% high p-value
+	Reading input files...
+	50000 total sequences read
+	Cache length = 11180
+	Using binomial scoring
+
+	Local Optimization Phase:
+	1 of 25 Initial Sequence: CACGTGTC... (-3848.648)
+		Round 1: -4762.77 CACGTGTC T:7487.0(31.20%),B:2208.7(7.60%),P:1e-2068
+		Round 2: -4762.77 CACGTGTC T:7487.0(31.20%),B:2208.7(7.60%),P:1e-2068
+		=Final=: -3240.01 CACGTGTC T:4464.0(22.29%),B:1522.9(5.45%),P:1e-1407
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	2 of 25 Initial Sequence: CTCTCTCT... (-1086.851)
+		Round 1: -1134.86 CTCTCTCT T:7806.0(32.28%),B:5632.1(18.27%),P:1e-492
+		Round 2: -1134.86 CTCTCTCT T:7806.0(32.28%),B:5632.1(18.27%),P:1e-492
+		=Final=: -334.26 CTCTCTCT T:1508.0(7.53%),B:1020.7(3.66%),P:1e-145
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	3 of 25 Initial Sequence: ATGGGCCC... (-618.503)
+		Round 1: -936.99 ATGGGCCC T:7291.0(30.52%),B:5520.7(17.94%),P:1e-406
+		Round 2: -976.74 DDKGGSCC T:7236.0(30.33%),B:5389.2(17.55%),P:1e-424
+		Round 3: -976.74 DDKGGSCC T:7236.0(30.33%),B:5389.2(17.55%),P:1e-424
+		=Final=: -447.04 DDKGGSCC T:3884.0(19.40%),B:3361.4(12.04%),P:1e-194
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	4 of 25 Initial Sequence: TGCCACGT... (-169.745)
+		Round 1: -309.47 TGCCACGT T:4624.0(20.62%),B:4272.1(14.19%),P:1e-134
+		Round 2: -387.57 DGMCACGT T:3981.0(18.03%),B:3368.8(11.36%),P:1e-168
+		Round 3: -428.43 NKMCACGT T:2030.0(9.64%),B:1343.7(4.70%),P:1e-186
+		Round 4: -472.54 DSMCRCGT T:4380.0(19.65%),B:3589.5(12.06%),P:1e-205
+		Round 5: -472.54 DSMCRCGT T:4380.0(19.65%),B:3589.5(12.06%),P:1e-205
+		=Final=: -349.76 DSMCRCGT T:3336.0(16.66%),B:2941.4(10.53%),P:1e-151
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	5 of 25 Initial Sequence: TCTCTCTC... (-146.330)
+		Round 1: -258.29 TCTCTCTC T:6979.0(29.43%),B:7135.6(22.55%),P:1e-112
+		Round 2: -258.29 TCTCTCTC T:6979.0(29.43%),B:7135.6(22.55%),P:1e-112
+		=Final=: -111.86 TCTCTCTC T:4292.0(21.44%),B:4853.5(17.38%),P:1e-48
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	6 of 25 Initial Sequence: GACAGCTG... (-127.440)
+		Round 1: -335.02 GACAGNTG T:4377.0(19.64%),B:3926.5(13.12%),P:1e-145
+		Round 2: -365.77 GMCABNTG T:2041.0(9.69%),B:1442.2(5.03%),P:1e-158
+		Round 3: -365.77 GMCABNTG T:2041.0(9.69%),B:1442.2(5.03%),P:1e-158
+		=Final=: -266.92 GMCABNTG T:1723.0(8.61%),B:1334.8(4.78%),P:1e-115
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	7 of 25 Initial Sequence: ACCAATCA... (-99.634)
+		Round 1: -256.44 GCCAATMA T:2331.0(10.99%),B:1931.7(6.68%),P:1e-111
+		Round 2: -256.44 GCCAATMA T:2331.0(10.99%),B:1931.7(6.68%),P:1e-111
+		=Final=: -265.78 GCCAATMA T:2216.0(11.07%),B:1864.5(6.68%),P:1e-115
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	8 of 25 Initial Sequence: TCCTTTTT... (-98.854)
+		Round 1: -158.98 TCCTTTTT T:3424.0(15.72%),B:3426.2(11.55%),P:1e-69
+		Round 2: -160.31 TMCTTTTT T:6773.0(28.70%),B:7400.4(23.28%),P:1e-69
+		Round 3: -169.48 DCTTTTTK T:5417.0(23.70%),B:5725.4(18.54%),P:1e-73
+		Round 4: -173.12 RCTTTTTY T:7997.0(32.93%),B:8800.0(27.03%),P:1e-75
+		Round 5: -173.12 RCTTTTTY T:7997.0(32.93%),B:8800.0(27.03%),P:1e-75
+		=Final=: -139.99 RCTTTTTY T:5243.0(26.18%),B:5943.4(21.29%),P:1e-60
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	9 of 25 Initial Sequence: TGCATGCA... (-51.695)
+		Round 1: -61.80 TGCATGCA T:563.0(2.77%),B:478.1(1.70%),P:1e-26
+		Round 2: -85.24 SHCATGCA T:432.0(2.13%),B:302.6(1.08%),P:1e-37
+		Round 3: -92.77 CACATGCA T:551.0(2.71%),B:407.7(1.45%),P:1e-40
+		Round 4: -97.53 GCCATGCG T:599.0(2.95%),B:449.0(1.59%),P:1e-42
+		Round 5: -136.09 CGCATGCA T:671.0(3.30%),B:460.3(1.63%),P:1e-59
+		Round 6: -136.09 CGCATGCA T:671.0(3.30%),B:460.3(1.63%),P:1e-59
+		=Final=: -117.33 CGCATGCA T:619.0(3.09%),B:443.6(1.59%),P:1e-50
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	10 of 25 Initial Sequence: ATTAAATA... (-47.652)
+		Round 1: -97.19 ATTAAATA T:7555.0(31.43%),B:8811.0(27.06%),P:1e-42
+		Round 2: -116.15 ATTAATTA T:5402.0(23.65%),B:6003.7(19.35%),P:1e-50
+		Round 3: -125.40 ATTAAWWW T:9841.0(38.83%),B:11415.8(33.56%),P:1e-54
+		Round 4: -125.40 ATTAAWWW T:9841.0(38.83%),B:11415.8(33.56%),P:1e-54
+		=Final=: -101.04 ATTAAWWW T:9576.0(47.83%),B:11984.5(42.92%),P:1e-43
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	11 of 25 Initial Sequence: CAACACGT... (-46.670)
+		Round 1: -75.19 CGACACGT T:191.0(0.95%),B:97.4(0.35%),P:1e-32
+		Round 2: -75.19 CGACACGT T:191.0(0.95%),B:97.4(0.35%),P:1e-32
+		=Final=: -73.93 CGACACGT T:190.0(0.95%),B:97.4(0.35%),P:1e-32
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	12 of 25 Initial Sequence: GACCGTTA... (-46.311)
+		Round 1: -100.76 GACCGTTA T:494.0(2.44%),B:340.7(1.21%),P:1e-43
+		Round 2: -100.76 GACCGTTA T:494.0(2.44%),B:340.7(1.21%),P:1e-43
+		=Final=: -99.43 GACCGTTA T:481.0(2.40%),B:333.3(1.19%),P:1e-43
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	13 of 25 Initial Sequence: ACCGAACC... (-43.317)
+		Round 1: -70.82 ACCGAACC T:570.0(2.81%),B:465.9(1.65%),P:1e-30
+		Round 2: -75.82 WYCGAACS T:629.0(3.09%),B:518.6(1.84%),P:1e-32
+		Round 3: -75.82 WYCGAACS T:629.0(3.09%),B:518.6(1.84%),P:1e-32
+		=Final=: -66.01 WYCGAACS T:590.0(2.95%),B:502.5(1.80%),P:1e-28
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	14 of 25 Initial Sequence: TTGTCAGA... (-40.511)
+		Round 1: -114.75 CTGTCAGM T:535.0(2.64%),B:360.0(1.28%),P:1e-49
+		Round 2: -114.75 CTGTCAGM T:535.0(2.64%),B:360.0(1.28%),P:1e-49
+		=Final=: -92.98 CTGTCAGM T:479.0(2.39%),B:340.2(1.22%),P:1e-40
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	15 of 25 Initial Sequence: TTTTGTCC... (-38.365)
+		Round 1: -75.60 TTTTGTCC T:767.0(3.76%),B:666.8(2.36%),P:1e-32
+		Round 2: -75.60 TTTTGTCC T:767.0(3.76%),B:666.8(2.36%),P:1e-32
+		=Final=: -74.25 TTTTGTCC T:751.0(3.75%),B:661.0(2.37%),P:1e-32
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	16 of 25 Initial Sequence: GTGGACCC... (-30.519)
+		Round 1: -36.49 GTGGACCC T:21.0(0.10%),B:3.5(0.01%),P:1e-15
+		Round 2: -43.43 TGGGACCC T:27.0(0.13%),B:4.8(0.01%),P:1e-18
+		Round 3: -44.70 KKGGACCC T:24.0(0.12%),B:3.5(0.01%),P:1e-19
+		Round 4: -44.70 KKGGACCC T:24.0(0.12%),B:3.5(0.01%),P:1e-19
+		=Final=: -38.88 KKGGACCC T:27.0(0.13%),B:4.8(0.02%),P:1e-16
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	17 of 25 Initial Sequence: CCACTCGC... (-28.369)
+		Round 1: -42.70 CCACTCGC T:111.0(0.55%),B:58.1(0.21%),P:1e-18
+		Round 2: -42.70 CCACTCGC T:111.0(0.55%),B:58.1(0.21%),P:1e-18
+		=Final=: -41.49 CCACTCGC T:110.0(0.55%),B:58.1(0.21%),P:1e-18
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	18 of 25 Initial Sequence: GACACATA... (-26.890)
+		Round 1: -34.16 GACACATA T:165.0(0.82%),B:116.9(0.41%),P:1e-14
+		Round 2: -40.50 GACACCTA T:241.0(1.20%),B:181.7(0.65%),P:1e-17
+		Round 3: -48.88 GACASCTA T:407.0(2.01%),B:338.9(1.20%),P:1e-21
+		Round 4: -48.88 GACASCTA T:407.0(2.01%),B:338.9(1.20%),P:1e-21
+		=Final=: -49.31 GACASCTA T:400.0(2.00%),B:332.6(1.19%),P:1e-21
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	19 of 25 Initial Sequence: AACGGACA... (-26.994)
+		Round 1: -33.41 AMCSGACM T:270.0(1.34%),B:225.0(0.80%),P:1e-14
+		Round 2: -44.98 AMCCGACC T:136.0(0.68%),B:77.6(0.28%),P:1e-19
+		Round 3: -44.98 AMCCGACC T:136.0(0.68%),B:77.6(0.28%),P:1e-19
+		=Final=: -37.97 AMCCGACC T:126.0(0.63%),B:75.7(0.27%),P:1e-16
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	20 of 25 Initial Sequence: CACTTGTT... (-22.097)
+		Round 1: -42.58 CACNTGTT T:513.0(2.53%),B:468.8(1.66%),P:1e-18
+		Round 2: -50.22 CAYGTGTN T:1925.0(9.17%),B:2121.6(7.32%),P:1e-21
+		Round 3: -66.39 CACGTGTT T:714.0(3.50%),B:631.5(2.23%),P:1e-28
+		Round 4: -66.39 CACGTGTT T:714.0(3.50%),B:631.5(2.23%),P:1e-28
+		=Final=: -50.58 CACGTGTT T:448.0(2.24%),B:381.5(1.37%),P:1e-21
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	21 of 25 Initial Sequence: GGCCTTTT... (-21.981)
+		Round 1: -21.98 GGCCTTTT T:22.0(0.11%),B:6.6(0.02%),P:1e-9
+		Round 2: -21.98 GGCCTTTT T:22.0(0.11%),B:6.6(0.02%),P:1e-9
+		=Final=: -15.68 GGCCTTTT T:19.0(0.09%),B:6.6(0.02%),P:1e-6
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	22 of 25 Initial Sequence: TTTGACCC... (-21.079)
+		Round 1: -30.81 TTTGACCC T:277.0(1.37%),B:238.3(0.85%),P:1e-13
+		Round 2: -36.77 TTTGACTT T:447.0(2.21%),B:411.5(1.46%),P:1e-15
+		Round 3: -44.85 GTTGACTG T:654.0(3.21%),B:621.3(2.20%),P:1e-19
+		Round 4: -51.36 TTTGACCG T:1350.0(6.52%),B:1416.0(4.95%),P:1e-22
+		Round 5: -52.90 TTTGACTT T:641.0(3.15%),B:585.0(2.07%),P:1e-22
+		Round 6: -52.90 TTTGACTT T:641.0(3.15%),B:585.0(2.07%),P:1e-22
+		=Final=: -47.34 TTTGACTT T:616.0(3.08%),B:576.5(2.06%),P:1e-20
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	23 of 25 Initial Sequence: CGCGTTGA... (-24.506)
+		Round 1: -40.55 CGCGYTAA T:149.0(0.74%),B:93.1(0.33%),P:1e-17
+		Round 2: -40.55 CGCGYTAA T:149.0(0.74%),B:93.1(0.33%),P:1e-17
+		=Final=: -35.21 CGCGYTAA T:137.0(0.68%),B:88.7(0.32%),P:1e-15
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	24 of 25 Initial Sequence: CTGACGTG... (-19.691)
+		Round 1: -43.43 CTGACGTG T:347.0(1.72%),B:286.7(1.02%),P:1e-18
+		Round 2: -43.43 CTGACGTG T:347.0(1.72%),B:286.7(1.02%),P:1e-18
+		=Final=: -39.16 CTGACGTG T:334.0(1.67%),B:282.6(1.01%),P:1e-17
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	25 of 25 Initial Sequence: ATAGGGGC... (-19.081)
+		Round 1: -29.78 AWAGGGGC T:34.0(0.17%),B:10.1(0.04%),P:1e-12
+		Round 2: -29.78 AWAGGGGC T:34.0(0.17%),B:10.1(0.04%),P:1e-12
+		=Final=: -22.92 AWAGGGGC T:42.0(0.21%),B:18.6(0.07%),P:1e-9
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+
+	Finalizing Enrichment Statistics (new in v3.4)
+	Reading input files...
+	50000 total sequences read
+	Cache length = 11180
+	Using binomial scoring
+	Checking enrichment of 25 motif(s)
+	|0%                                    50%                                  100%|
+	=================================================================================
+	Output in file: .//homerMotifs.motifs8
+
+	(Motifs in homer2 format)
+	Determining similar motifs... 25 reduced to 14 motifs
+	Outputing HTML and sequence logos for motif comparison...
+	Checking de novo motifs against known motifs...
+	Formatting HTML page...
+		1 of 14 (1e-1407) similar to ABI5/MA0931.1/Jaspar(0.981)
+		2 of 14 (1e-205) similar to OJ1581_H09.2/MA1031.1/Jaspar(0.845)
+		3 of 14 (1e-172) similar to POL004.1_CCAAT-box/Jaspar(0.897)
+		4 of 14 (1e-146) similar to FRS9(ND)/col-FRS9-DAP-Seq(GSE60143)/Homer(0.870)
+		5 of 14 (1e-91) similar to CDF2/MA0973.1/Jaspar(0.943)
+		6 of 14 (1e-90) similar to HDG1(Homeobox)/col100-HDG1-DAP-Seq(GSE60143)/Homer(0.864)
+		7 of 14 (1e-79) similar to AtGRF6(GRF)/col-AtGRF6-DAP-Seq(GSE60143)/Homer(0.927)
+		8 of 14 (1e-72) similar to LEC2/MA0581.1/Jaspar(0.907)
+		9 of 14 (1e-49) similar to IDD2(C2H2)/colamp-IDD2-DAP-Seq(GSE60143)/Homer(0.858)
+		10 of 14 (1e-46) similar to MYB73/MA1394.2/Jaspar(0.904)
+		11 of 14 (1e-38) similar to ATY13(MYB)/col-ATY13-DAP-Seq(GSE60143)/Homer(0.684)
+		12 of 14 (1e-35) similar to bZIP18(bZIP)/colamp-bZIP18-DAP-Seq(GSE60143)/Homer(0.791)
+		13 of 14 (1e-28) similar to FAR1(FAR1)/col-FAR1-DAP-Seq(GSE60143)/Homer(0.830)
+		14 of 14 (1e-23) similar to CAMTA1(CAMTA)/col-CAMTA1-DAP-Seq(GSE60143)/Homer(0.853)
+	Job finished - if results look good, please send beer to ..
+
+	Cleaning up tmp files...
+
+
+	Position file = ../../peak_calling/replicate_2_summits.bed
+	Genome = tair10
+	Output Directory = ./
+	Fragment size set to 100
+	Motif length set at 8,
+	Found mset for "arabidopsis", will check against plants motifs
+	Peak/BED file conversion summary:
+		BED/Header formatted lines: 16507
+		peakfile formatted lines: 0
+
+	Peak File Statistics:
+		Total Peaks: 16507
+		Redundant Peak IDs: 0
+		Peaks lacking information: 0 (need at least 5 columns per peak)
+		Peaks with misformatted coordinates: 0 (should be integer)
+		Peaks with misformatted strand: 0 (should be either +/- or 0/1)
+
+	Peak file looks good!
+
+	Background files for 100 bp fragments found.
+	Custom genome sequence directory: /home/bag2021_2/prr5/homer/.//data/genomes/tair10//
+
+	Extracting sequences from file: /home/bag2021_2/prr5/homer/.//data/genomes/tair10///genome.fa
+	Looking for peak sequences in a single file (/home/bag2021_2/prr5/homer/.//data/genomes/tair10///genome.fa)
+	Extracting 4370 sequences from 1
+	Extracting 2602 sequences from 2
+	Extracting 3237 sequences from 3
+	Extracting 2545 sequences from 4
+	Extracting 3753 sequences from 5
+
+	Not removing redundant sequences
+
+
+	Sequences processed:
+		Auto detected maximum sequence length of 101 bp
+		16507 total
+
+	Frequency Bins: 0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.6 0.7 0.8
+	Freq	Bin	Count
+	0.2	0	63
+	0.25	1	498
+	0.3	2	1732
+	0.35	3	3576
+	0.4	4	4406
+	0.45	5	3398
+	0.5	6	1917
+	0.6	7	874
+	0.7	8	42
+	0.8	9	1
+
+	Total sequences set to 50000
+
+	Choosing background that matches in CpG/GC content...
+	Bin	# Targets	# Background	Background Weight
+	0	63	128	0.999
+	1	498	1010	1.000
+	2	1732	3514	1.000
+	3	3576	7256	1.000
+	4	4406	8940	1.000
+	5	3398	6895	1.000
+	6	1917	3890	1.000
+	7	874	1773	1.000
+	8	42	85	1.003
+	9	1	2	1.015
+	Assembling sequence file...
+	Normalizing lower order oligos using homer2
+
+	Reading input files...
+	50000 total sequences read
+	Autonormalization: 1-mers (4 total)
+		A	30.97%	31.00%	0.999
+		C	19.03%	19.00%	1.001
+		G	19.03%	19.00%	1.001
+		T	30.97%	31.00%	0.999
+	Autonormalization: 2-mers (16 total)
+		AA	11.41%	10.99%	1.039
+		CA	6.29%	6.40%	0.984
+		GA	6.31%	6.82%	0.925
+		TA	6.94%	6.80%	1.021
+		AC	5.80%	5.31%	1.092
+		CC	3.75%	3.67%	1.024
+		GC	3.19%	3.21%	0.993
+		TC	6.31%	6.82%	0.925
+		AG	5.61%	6.18%	0.907
+		CG	3.37%	2.76%	1.223
+		GG	3.75%	3.67%	1.024
+		TG	6.29%	6.40%	0.984
+		AT	8.15%	8.51%	0.957
+		CT	5.61%	6.18%	0.907
+		GT	5.80%	5.31%	1.092
+		TT	11.41%	10.99%	1.039
+	Autonormalization: 3-mers (64 total)
+	Normalization weights can be found in file: .//seq.autonorm.tsv
+	Converging on autonormalization solution:
+	...............................................................................
+	Final normalization:	Autonormalization: 1-mers (4 total)
+		A	30.97%	30.98%	1.000
+		C	19.03%	19.02%	1.001
+		G	19.03%	19.02%	1.001
+		T	30.97%	30.98%	1.000
+	Autonormalization: 2-mers (16 total)
+		AA	11.41%	11.37%	1.004
+		CA	6.29%	6.29%	1.001
+		GA	6.31%	6.37%	0.990
+		TA	6.94%	6.96%	0.997
+		AC	5.80%	5.71%	1.015
+		CC	3.75%	3.75%	1.000
+		GC	3.19%	3.18%	1.001
+		TC	6.31%	6.37%	0.990
+		AG	5.61%	5.68%	0.988
+		CG	3.37%	3.29%	1.023
+		GG	3.75%	3.75%	1.000
+		TG	6.29%	6.29%	1.001
+		AT	8.15%	8.22%	0.991
+		CT	5.61%	5.68%	0.988
+		GT	5.80%	5.71%	1.015
+		TT	11.41%	11.37%	1.004
+	Autonormalization: 3-mers (64 total)
+	Finished preparing sequence/group files
+
+	----------------------------------------------------------
+	Known motif enrichment
+
+	Reading input files...
+	50000 total sequences read
+	506 motifs loaded
+	Cache length = 11180
+	Using binomial scoring
+	Checking enrichment of 506 motif(s)
+	|0%                                    50%                                  100%|
+	=================================================================================
+	Preparing HTML output with sequence logos...
+		1 of 506 (1e-1258) ABF1(bZIP)/Arabidopsis-ABF1-ChIP-Seq(GSE80564)/Homer
+		2 of 506 (1e-1165) E-box/Arabidopsis-Promoters/Homer
+		3 of 506 (1e-1120) ABI5(bZIP)/col-ABI5-DAP-Seq(GSE60143)/Homer
+		4 of 506 (1e-1080) bZIP16(bZIP)/colamp-bZIP16-DAP-Seq(GSE60143)/Homer
+		5 of 506 (1e-1071) bZIP3(bZIP)/col-bZIP3-DAP-Seq(GSE60143)/Homer
+		6 of 506 (1e-1067) bZIP68(bZIP)/col-bZIP68-DAP-Seq(GSE60143)/Homer
+		7 of 506 (1e-1043) bZIP53(bZIP)/colamp-bZIP53-DAP-Seq(GSE60143)/Homer
+		8 of 506 (1e-1038) bZIP28(bZIP)/col-bZIP28-DAP-Seq(GSE60143)/Homer
+		9 of 506 (1e-1030) AREB3(bZIP)/col-AREB3-DAP-Seq(GSE60143)/Homer
+		10 of 506 (1e-1012) GBF5(bZIP)/colamp-GBF5-DAP-Seq(GSE60143)/Homer
+		11 of 506 (1e-1009) bZIP48(bZIP)/colamp-bZIP48-DAP-Seq(GSE60143)/Homer
+		12 of 506 (1e-1008) ABF2(bZIP)/col-ABF2-DAP-Seq(GSE60143)/Homer
+		13 of 506 (1e-933) IBL1(bHLH)/Seedling-IBL1-ChIP-Seq(GSE51120)/Homer
+		14 of 506 (1e-933) GBF3(bZIP)/Arabidopsis-GBF3-ChIP-Seq(GSE80564)/Homer
+		15 of 506 (1e-923) bHLH34(bHLH)/colamp-bHLH34-DAP-Seq(GSE60143)/Homer
+		16 of 506 (1e-920) GBF6(bZIP)/colamp-GBF6-DAP-Seq(GSE60143)/Homer
+		17 of 506 (1e-882) At4g36780(BZR)/col-At4g36780-DAP-Seq(GSE60143)/Homer
+		18 of 506 (1e-881) At1g78700(BZR)/col-At1g78700-DAP-Seq(GSE60143)/Homer
+		19 of 506 (1e-823) SPCH(bHLH)/Seedling-SPCH-ChIP-Seq(GSE57497)/Homer
+		20 of 506 (1e-797) PIF4(bHLH)/Seedling-PIF4-ChIP-Seq(GSE35315)/Homer
+		21 of 506 (1e-746) BIM2(bHLH)/col-BIM2-DAP-Seq(GSE60143)/Homer
+		22 of 506 (1e-585) GT3a(Trihelix)/col-GT3a-DAP-Seq(GSE60143)/Homer
+		23 of 506 (1e-584) PIF7(bHLH)/col-PIF7-DAP-Seq(GSE60143)/Homer
+		24 of 506 (1e-582) BAM8(BES1)/col-BAM8-DAP-Seq(GSE60143)/Homer
+		25 of 506 (1e-571) HY5(bZIP)/colamp-HY5-DAP-Seq(GSE60143)/Homer
+		26 of 506 (1e-542) PIF5ox(bHLH)/Arabidopsis-PIF5ox-ChIP-Seq(GSE35062)/Homer
+		27 of 506 (1e-530) At4g18890(BZR)/col-At4g18890-DAP-Seq(GSE60143)/Homer
+		28 of 506 (1e-235) bHLH74(bHLH)/col-bHLH74-DAP-Seq(GSE60143)/Homer
+		29 of 506 (1e-171) ATAF1(NAC)/col-ATAF1-DAP-Seq(GSE60143)/Homer
+		30 of 506 (1e-154) CAMTA5(CAMTA)/col-CAMTA5-DAP-Seq(GSE60143)/Homer
+		31 of 506 (1e-140) BZR1(BZR)/col-BZR1-DAP-Seq(GSE60143)/Homer
+		32 of 506 (1e-124) CAMTA1(CAMTA)/col-CAMTA1-DAP-Seq(GSE60143)/Homer
+		33 of 506 (1e-123) bHLH157(bHLH)/col-bHLH157-DAP-Seq(GSE60143)/Homer
+		34 of 506 (1e-116) O2(bZIP)/Corn-O2-ChIP-Seq(GSE63991)/Homer
+		35 of 506 (1e-105) bZIP44(bZIP)/colamp-bZIP44-DAP-Seq(GSE60143)/Homer
+		36 of 506 (1e-96) BIM1(bHLH)/colamp-BIM1-DAP-Seq(GSE60143)/Homer
+		37 of 506 (1e-91) FRS9(ND)/col-FRS9-DAP-Seq(GSE60143)/Homer
+		38 of 506 (1e-89) BPC1(BBRBPC)/colamp-BPC1-DAP-Seq(GSE60143)/Homer
+		39 of 506 (1e-89) BIM3(bHLH)/col-BIM3-DAP-Seq(GSE60143)/Homer
+		40 of 506 (1e-82) FHY3(FAR1)/Arabidopsis-FHY3-ChIP-Seq(GSE30711)/Homer
+		41 of 506 (1e-79) GAGA-repeat/Arabidopsis-Promoters/Homer
+		42 of 506 (1e-77) GRF9(GRF)/colamp-GRF9-DAP-Seq(GSE60143)/Homer
+		43 of 506 (1e-75) ZML1(C2C2gata)/colamp-ZML1-DAP-Seq(GSE60143)/Homer
+		44 of 506 (1e-75) AT5G63260(C3H)/col-AT5G63260-DAP-Seq(GSE60143)/Homer
+		45 of 506 (1e-75) dof45(C2C2dof)/col-dof45-DAP-Seq(GSE60143)/Homer
+		46 of 506 (1e-75) OBP1(C2C2dof)/col-OBP1-DAP-Seq(GSE60143)/Homer
+		47 of 506 (1e-71) PCF/Arabidopsis-Promoters/Homer
+		48 of 506 (1e-71) At3g45610(C2C2dof)/col-At3g45610-DAP-Seq(GSE60143)/Homer
+		49 of 506 (1e-71) AtGRF6(GRF)/col-AtGRF6-DAP-Seq(GSE60143)/Homer
+		50 of 506 (1e-70) At5g62940(C2C2dof)/col-At5g62940-DAP-Seq(GSE60143)/Homer
+		51 of 506 (1e-70) OBP3(C2C2dof)/col-OBP3-DAP-Seq(GSE60143)/Homer
+		52 of 506 (1e-70) Adof1(C2C2dof)/col-Adof1-DAP-Seq(GSE60143)/Homer
+		53 of 506 (1e-66) ZIM(C2C2gata)/col-ZIM-DAP-Seq(GSE60143)/Homer
+		54 of 506 (1e-65) AT2G28810(C2C2dof)/colamp-AT2G28810-DAP-Seq(GSE60143)/Homer
+		55 of 506 (1e-65) COG1(C2C2dof)/col-COG1-DAP-Seq(GSE60143)/Homer
+		56 of 506 (1e-63) BPC6(BBRBPC)/col-BPC6-DAP-Seq(GSE60143)/Homer
+		57 of 506 (1e-62) AT5G02460(C2C2dof)/col-AT5G02460-DAP-Seq(GSE60143)/Homer
+		58 of 506 (1e-62) FAR1(FAR1)/col-FAR1-DAP-Seq(GSE60143)/Homer
+		59 of 506 (1e-61) At5g08330(TCP)/col-At5g08330-DAP-Seq(GSE60143)/Homer
+		60 of 506 (1e-61) BBX31(Orphan)/col-BBX31-DAP-Seq(GSE60143)/Homer
+		61 of 506 (1e-61) AT3G12130(C3H)/colamp-AT3G12130-DAP-Seq(GSE60143)/Homer
+		62 of 506 (1e-60) bHLH18(bHLH)/col-bHLH18-DAP-Seq(GSE60143)/Homer
+		63 of 506 (1e-59) AT5G66940(C2C2dof)/col-AT5G66940-DAP-Seq(GSE60143)/Homer
+		64 of 506 (1e-58) AT3G52440(C2C2dof)/colamp-AT3G52440-DAP-Seq(GSE60143)/Homer
+		65 of 506 (1e-58) AT1G47655(C2C2dof)/colamp-AT1G47655-DAP-Seq(GSE60143)/Homer
+		66 of 506 (1e-56) AT5G59990(C2C2COlike)/colamp-AT5G59990-DAP-Seq(GSE60143)/Homer
+		67 of 506 (1e-55) dof43(C2C2dof)/colamp-dof43-DAP-Seq(GSE60143)/Homer
+		68 of 506 (1e-54) bHLH130(bHLH)/col-bHLH130-DAP-Seq(GSE60143)/Homer
+		69 of 506 (1e-53) DAG2(C2C2dof)/col-DAG2-DAP-Seq(GSE60143)/Homer
+		70 of 506 (1e-51) Unknown1/Arabidopsis-Promoters/Homer
+		71 of 506 (1e-50) dof24(C2C2dof)/col-dof24-DAP-Seq(GSE60143)/Homer
+		72 of 506 (1e-50) CDF3(C2C2dof)/colamp-CDF3-DAP-Seq(GSE60143)/Homer
+		73 of 506 (1e-47) TCP7(TCP)/col-TCP7-DAP-Seq(GSE60143)/Homer
+		74 of 506 (1e-46) bHLH122(bHLH)/col100-bHLH122-DAP-Seq(GSE60143)/Homer
+		75 of 506 (1e-46) JKD(C2H2)/col-JKD-DAP-Seq(GSE60143)/Homer
+		76 of 506 (1e-45) bHLH80(bHLH)/col-bHLH80-DAP-Seq(GSE60143)/Homer
+		77 of 506 (1e-45) ANAC047(NAC)/colamp-ANAC047-DAP-Seq(GSE60143)/Homer
+		78 of 506 (1e-45) At1g72010(TCP)/colamp-At1g72010-DAP-Seq(GSE60143)/Homer
+		79 of 506 (1e-44) At1g64620(C2C2dof)/colamp-At1g64620-DAP-Seq(GSE60143)/Homer
+		80 of 506 (1e-43) At1g14580(C2H2)/colamp-At1g14580-DAP-Seq(GSE60143)/Homer
+		81 of 506 (1e-43) bZIP42(bZIP)/colamp-bZIP42-DAP-Seq(GSE60143)/Homer
+		82 of 506 (1e-43) VIP1(bZIP)/col-VIP1-DAP-Seq(GSE60143)/Homer
+		83 of 506 (1e-41) IDD4(C2H2)/col-IDD4-DAP-Seq(GSE60143)/Homer
+		84 of 506 (1e-41) HDG1(Homeobox)/col100-HDG1-DAP-Seq(GSE60143)/Homer
+		85 of 506 (1e-41) bZIP69(bZIP)/col-bZIP69-DAP-Seq(GSE60143)/Homer
+		86 of 506 (1e-41) MGP(C2H2)/colamp-MGP-DAP-Seq(GSE60143)/Homer
+		87 of 506 (1e-39) TGA6(bZIP)/colamp-TGA6-DAP-Seq(GSE60143)/Homer
+		88 of 506 (1e-39) At1g69690(TCP)/colamp-At1g69690-DAP-Seq(GSE60143)/Homer
+		89 of 506 (1e-39) At4g38000(C2C2dof)/col-At4g38000-DAP-Seq(GSE60143)/Homer
+		90 of 506 (1e-38) AtIDD11(C2H2)/colamp-AtIDD11-DAP-Seq(GSE60143)/Homer
+		91 of 506 (1e-38) TCP20(TCP)/col-TCP20-DAP-Seq(GSE60143)/Homer
+		92 of 506 (1e-37) IDD7(C2H2)/col-IDD7-DAP-Seq(GSE60143)/Homer
+		93 of 506 (1e-36) TGA10(bZIP)/colamp-TGA10-DAP-Seq(GSE60143)/Homer
+		94 of 506 (1e-36) bZIP52(bZIP)/colamp-bZIP52-DAP-Seq(GSE60143)/Homer
+		95 of 506 (1e-36) LMI1(HB)/colamp-LMI1-DAP-Seq(GSE60143)/Homer
+		96 of 506 (1e-36) ATHB13(Homeobox)/col-ATHB13-DAP-Seq(GSE60143)/Homer
+		97 of 506 (1e-35) OBP4(C2C2dof)/col-OBP4-DAP-Seq(GSE60143)/Homer
+		98 of 506 (1e-35) ATHB21(HB)/colamp-ATHB21-DAP-Seq(GSE60143)/Homer
+		99 of 506 (1e-35) NUC(C2H2)/col-NUC-DAP-Seq(GSE60143)/Homer
+		100 of 506 (1e-32) At5g66730(C2H2)/colamp-At5g66730-DAP-Seq(GSE60143)/Homer
+		101 of 506 (1e-32) ANL2(HB)/col-ANL2-DAP-Seq(GSE60143)/Homer
+		102 of 506 (1e-31) AT1G69570(C2C2dof)/col-AT1G69570-DAP-Seq(GSE60143)/Homer
+		103 of 506 (1e-31) TGA9(bZIP)/colamp-TGA9-DAP-Seq(GSE60143)/Homer
+		104 of 506 (1e-30) TGA4(bZIP)/colamp-TGA4-DAP-Seq(GSE60143)/Homer
+		105 of 506 (1e-30) ATHB53(HB)/col-ATHB53-DAP-Seq(GSE60143)/Homer
+		106 of 506 (1e-30) bZIP50(bZIP)/colamp-bZIP50-DAP-Seq(GSE60143)/Homer
+		107 of 506 (1e-30) FUS3(ABI3VP1)/col-FUS3-DAP-Seq(GSE60143)/Homer
+		108 of 506 (1e-30) IDD2(C2H2)/colamp-IDD2-DAP-Seq(GSE60143)/Homer
+		109 of 506 (1e-28) AT4G27900(C2C2COlike)/col-AT4G27900-DAP-Seq(GSE60143)/Homer
+		110 of 506 (1e-28) ATHB40(HB)/col-ATHB40-DAP-Seq(GSE60143)/Homer
+		111 of 506 (1e-28) IDD5(C2H2)/colamp-IDD5-DAP-Seq(GSE60143)/Homer
+		112 of 506 (1e-27) ARF2(ARF)/col-ARF2-DAP-Seq(GSE60143)/Homer
+		113 of 506 (1e-27) MYB98(MYB)/col-MYB98-DAP-Seq(GSE60143)/Homer
+		114 of 506 (1e-27) TGA2(bZIP)/colamp-TGA2-DAP-Seq(GSE60143)/Homer
+		115 of 506 (1e-26) bZIP18(bZIP)/colamp-bZIP18-DAP-Seq(GSE60143)/Homer
+		116 of 506 (1e-24) MYB118(MYB)/colamp-MYB118-DAP-Seq(GSE60143)/Homer
+		117 of 506 (1e-24) MYB3R5(MYB)/col-MYB3R5-DAP-Seq(GSE60143)/Homer
+		118 of 506 (1e-23) MYB119(MYB)/colamp-MYB119-DAP-Seq(GSE60143)/Homer
+		119 of 506 (1e-21) SGR5(C2H2)/colamp-SGR5-DAP-Seq(GSE60143)/Homer
+		120 of 506 (1e-21) bHLH10(bHLH)/colamp-bHLH10-DAP-Seq(GSE60143)/Homer
+		121 of 506 (1e-21) ANAC038(NAC)/col-ANAC038-DAP-Seq(GSE60143)/Homer
+		122 of 506 (1e-20) CBF1(AP2EREBP)/colamp-CBF1-DAP-Seq(GSE60143)/Homer
+		123 of 506 (1e-20) FEA4(bZIP)/Corn-FEA4-ChIP-Seq(GSE61954)/Homer
+		124 of 506 (1e-20) MYB77(MYB)/col-MYB77-DAP-Seq(GSE60143)/Homer
+		125 of 506 (1e-20) AT1G77200(AP2EREBP)/colamp-AT1G77200-DAP-Seq(GSE60143)/Homer
+		126 of 506 (1e-18) MYB3R4(MYB)/col-MYB3R4-DAP-Seq(GSE60143)/Homer
+		127 of 506 (1e-18) WRKY11(WRKY)/col-WRKY11-DAP-Seq(GSE60143)/Homer
+		128 of 506 (1e-18) TINY(AP2EREBP)/col-TINY-DAP-Seq(GSE60143)/Homer
+		129 of 506 (1e-18) WRKY21(WRKY)/colamp-WRKY21-DAP-Seq(GSE60143)/Homer
+		130 of 506 (1e-18) AT1G12630(AP2EREBP)/colamp-AT1G12630-DAP-Seq(GSE60143)/Homer
+		131 of 506 (1e-18) WRKY22(WRKY)/colamp-WRKY22-DAP-Seq(GSE60143)/Homer
+		132 of 506 (1e-18) Rap210(AP2EREBP)/col-Rap210-DAP-Seq(GSE60143)/Homer
+		133 of 506 (1e-18) ATHB5(HB)/colamp-ATHB5-DAP-Seq(GSE60143)/Homer
+		134 of 506 (1e-18) DDF1(AP2EREBP)/col-DDF1-DAP-Seq(GSE60143)/Homer
+		135 of 506 (1e-17) WRKY65(WRKY)/colamp-WRKY65-DAP-Seq(GSE60143)/Homer
+		136 of 506 (1e-17) At2g45680(TCP)/colamp-At2g45680-DAP-Seq(GSE60143)/Homer
+		137 of 506 (1e-16) WRKY26(WRKY)/colamp-WRKY26-DAP-Seq(GSE60143)/Homer
+		138 of 506 (1e-16) At2g44940(AP2EREBP)/colamp-At2g44940-DAP-Seq(GSE60143)/Homer
+		139 of 506 (1e-16) AT3G60490(AP2EREBP)/colamp-AT3G60490-DAP-Seq(GSE60143)/Homer
+		140 of 506 (1e-16) NAM(NAC)/col-NAM-DAP-Seq(GSE60143)/Homer
+		141 of 506 (1e-16) TGA1(bZIP)/colamp-TGA1-DAP-Seq(GSE60143)/Homer
+		142 of 506 (1e-15) ANAC079(NAC)/colamp-ANAC079-DAP-Seq(GSE60143)/Homer
+		143 of 506 (1e-15) WRKY31(WRKY)/colamp-WRKY31-DAP-Seq(GSE60143)/Homer
+		144 of 506 (1e-15) NAP(NAC)/col-NAP-DAP-Seq(GSE60143)/Homer
+		145 of 506 (1e-15) WRKY43(WRKY)/colamp-WRKY43-DAP-Seq(GSE60143)/Homer
+		146 of 506 (1e-15) At3g60580(C2H2)/col-At3g60580-DAP-Seq(GSE60143)/Homer
+		147 of 506 (1e-15) WRKY25(WRKY)/colamp-WRKY25-DAP-Seq(GSE60143)/Homer
+		148 of 506 (1e-15) TCP3(TCP)/colamp-TCP3-DAP-Seq(GSE60143)/Homer
+		149 of 506 (1e-15) WRKY6(WRKY)/colamp-WRKY6-DAP-Seq(GSE60143)/Homer
+		150 of 506 (1e-15) At1g76110(ARID)/colamp-At1g76110-DAP-Seq(GSE60143)/Homer
+		151 of 506 (1e-15) Unknown3/Arabidopsis-Promoters/Homer
+		152 of 506 (1e-14) WRKY40(WRKY)/colamp-WRKY40-DAP-Seq(GSE60143)/Homer
+		153 of 506 (1e-14) ATHB6(Homeobox)/col-ATHB6-DAP-Seq(GSE60143)/Homer
+		154 of 506 (1e-14) WRKY8(WRKY)/colamp-WRKY8-DAP-Seq(GSE60143)/Homer
+		155 of 506 (1e-14) ERF38(AP2EREBP)/col-ERF38-DAP-Seq(GSE60143)/Homer
+		156 of 506 (1e-13) ATHB18(Homeobox)/colamp-ATHB18-DAP-Seq(GSE60143)/Homer
+		157 of 506 (1e-13) WRKY33(WRKY)/col-WRKY33-DAP-Seq(GSE60143)/Homer
+		158 of 506 (1e-13) TCP16(TCP)/colamp-TCP16-DAP-Seq(GSE60143)/Homer
+		159 of 506 (1e-13) AT5G56840(MYBrelated)/colamp-AT5G56840-DAP-Seq(GSE60143)/Homer
+		160 of 506 (1e-13) WRKY28(WRKY)/col-WRKY28-DAP-Seq(GSE60143)/Homer
+		161 of 506 (1e-13) WRKY3(WRKY)/col-WRKY3-DAP-Seq(GSE60143)/Homer
+		162 of 506 (1e-13) WRKY15(WRKY)/col-WRKY15-DAP-Seq(GSE60143)/Homer
+		163 of 506 (1e-13) WRKY29(WRKY)/colamp-WRKY29-DAP-Seq(GSE60143)/Homer
+		164 of 506 (1e-12) AT3G42860(zfGRF)/col-AT3G42860-DAP-Seq(GSE60143)/Homer
+		165 of 506 (1e-12) Replumless(BLH)/Arabidopsis-RPL.GFP-ChIP-Seq(GSE78727)/Homer
+		166 of 506 (1e-12) At4g16750(AP2EREBP)/col-At4g16750-DAP-Seq(GSE60143)/Homer
+		167 of 506 (1e-12) WRKY24(WRKY)/colamp-WRKY24-DAP-Seq(GSE60143)/Homer
+		168 of 506 (1e-12) WRKY27(WRKY)/colamp-WRKY27-DAP-Seq(GSE60143)/Homer
+		169 of 506 (1e-12) CBF3(AP2EREBP)/colamp-CBF3-DAP-Seq(GSE60143)/Homer
+		170 of 506 (1e-12) ATHB20(Homeobox)/colamp-ATHB20-DAP-Seq(GSE60143)/Homer
+		171 of 506 (1e-11) HAT5(Homeobox)/colamp-HAT5-DAP-Seq(GSE60143)/Homer
+		172 of 506 (1e-11) WRKY30(WRKY)/colamp-WRKY30-DAP-Seq(GSE60143)/Homer
+		173 of 506 (1e-11) MYB65(MYB)/colamp-MYB65-DAP-Seq(GSE60143)/Homer
+		174 of 506 (1e-11) WRKY47(WRKY)/colamp-WRKY47-DAP-Seq(GSE60143)/Homer
+		175 of 506 (1e-11) ATHB7(Homeobox)/col-ATHB7-DAP-Seq(GSE60143)/Homer
+		176 of 506 (1e-11) WRKY14(WRKY)/colamp-WRKY14-DAP-Seq(GSE60143)/Homer
+		177 of 506 (1e-11) TCP1(TCP)/col-TCP1-DAP-Seq(GSE60143)/Homer
+		178 of 506 (1e-11) SEP3(MADS)/Arabidoposis-Flower-Sep3-ChIP-Seq/Homer
+		179 of 506 (1e-11) WRKY42(WRKY)/colamp-WRKY42-DAP-Seq(GSE60143)/Homer
+		180 of 506 (1e-11) WRKY55(WRKY)/col-WRKY55-DAP-Seq(GSE60143)/Homer
+		181 of 506 (1e-11) AZF1(C2H2)/colamp-AZF1-DAP-Seq(GSE60143)/Homer
+		182 of 506 (1e-11) CBF4(AP2EREBP)/colamp-CBF4-DAP-Seq(GSE60143)/Homer
+		183 of 506 (1e-11) WRKY71(WRKY)/col-WRKY71-DAP-Seq(GSE60143)/Homer
+		184 of 506 (1e-11) SPL13(SBP)/col-SPL13-DAP-Seq(GSE60143)/Homer
+		185 of 506 (1e-10) CEJ1(AP2EREBP)/col-CEJ1-DAP-Seq(GSE60143)/Homer
+		186 of 506 (1e-10) WRKY20(WRKY)/col-WRKY20-DAP-Seq(GSE60143)/Homer
+		187 of 506 (1e-10) AT3G16280(AP2EREBP)/colamp-AT3G16280-DAP-Seq(GSE60143)/Homer
+		188 of 506 (1e-10) MYB101(MYB)/colamp-MYB101-DAP-Seq(GSE60143)/Homer
+		189 of 506 (1e-10) WRKY75(WRKY)/col-WRKY75-DAP-Seq(GSE60143)/Homer
+		190 of 506 (1e-10) At1g19210(AP2EREBP)/colamp-At1g19210-DAP-Seq(GSE60143)/Homer
+		191 of 506 (1e-10) RKD2(RWPRK)/colamp-RKD2-DAP-Seq(GSE60143)/Homer
+		192 of 506 (1e-10) At5g47390(MYBrelated)/col-At5g47390-DAP-Seq(GSE60143)/Homer
+		193 of 506 (1e-10) HDG7(HB)/col-HDG7-DAP-Seq(GSE60143)/Homer
+		194 of 506 (1e-10) AT5G61620(MYBrelated)/colamp-AT5G61620-DAP-Seq(GSE60143)/Homer
+		195 of 506 (1e-10) WRKY18(WRKY)/col-WRKY18-DAP-Seq(GSE60143)/Homer
+		196 of 506 (1e-10) RVE1(MYBrelated)/col-RVE1-DAP-Seq(GSE60143)/Homer
+		197 of 506 (1e-10) ANAC046(NAC)/colamp-ANAC046-DAP-Seq(GSE60143)/Homer
+		198 of 506 (1e-10) DEAR3(AP2EREBP)/colamp-DEAR3-DAP-Seq(GSE60143)/Homer
+		199 of 506 (1e-10) WRKY45(WRKY)/col-WRKY45-DAP-Seq(GSE60143)/Homer
+		200 of 506 (1e-10) CBF2(AP2EREBP)/colamp-CBF2-DAP-Seq(GSE60143)/Homer
+		201 of 506 (1e-10) NLP7(RWPRK)/col-NLP7-DAP-Seq(GSE60143)/Homer
+		202 of 506 (1e-10) ATHB6(Homeobox)/Arabidopsis-HB6-ChIP-Seq(GSE80564)/Homer
+		203 of 506 (1e-10) Knotted(Homeobox)/Corn-KN1-ChIP-Seq(GSE39161)/Homer
+		204 of 506 (1e-9) ATY13(MYB)/col-ATY13-DAP-Seq(GSE60143)/Homer
+		205 of 506 (1e-9) PLT3(AP2EREBP)/col-PLT3-DAP-Seq(GSE60143)/Homer
+		206 of 506 (1e-9) At1g22810(AP2EREBP)/colamp-At1g22810-DAP-Seq(GSE60143)/Homer
+		207 of 506 (1e-9) At1g36060(AP2EREBP)/colamp-At1g36060-DAP-Seq(GSE60143)/Homer
+		208 of 506 (1e-8) At5g52660(MYBrelated)/colamp-At5g52660-DAP-Seq(GSE60143)/Homer
+		209 of 506 (1e-8) TAGL1(MADS)/Tomato-TAGL1-ChIP-Seq(GSE116581)/Homer
+		210 of 506 (1e-8) At4g32800(AP2EREBP)/colamp-At4g32800-DAP-Seq(GSE60143)/Homer
+		211 of 506 (1e-8) At1g19000(MYBrelated)/colamp-At1g19000-DAP-Seq(GSE60143)/Homer
+		212 of 506 (1e-8) RAP21(AP2EREBP)/colamp-RAP21-DAP-Seq(GSE60143)/Homer
+		213 of 506 (1e-8) EPR1(MYBrelated)/colamp-EPR1-DAP-Seq(GSE60143)/Homer
+		214 of 506 (1e-8) LHY1(MYBrelated)/col-LHY1-DAP-Seq(GSE60143)/Homer
+		215 of 506 (1e-7) MYB3R1(MYB)/col-MYB3R1-DAP-Seq(GSE60143)/Homer
+		216 of 506 (1e-7) At4g01280(MYBrelated)/colamp-At4g01280-DAP-Seq(GSE60143)/Homer
+		217 of 506 (1e-7) At1g74840(MYBrelated)/col100-At1g74840-DAP-Seq(GSE60143)/Homer
+		218 of 506 (1e-7) At4g28140(AP2EREBP)/colamp-At4g28140-DAP-Seq(GSE60143)/Homer
+		219 of 506 (1e-7) WRKY46(WRKY)/colamp-WRKY46-DAP-Seq(GSE60143)/Homer
+		220 of 506 (1e-7) At4g31060(AP2EREBP)/colamp-At4g31060-DAP-Seq(GSE60143)/Homer
+		221 of 506 (1e-7) AT3G10113(MYBrelated)/col-AT3G10113-DAP-Seq(GSE60143)/Homer
+		222 of 506 (1e-6) MYB30(MYB)/colamp-MYB30-DAP-Seq(GSE60143)/Homer
+		223 of 506 (1e-6) TF3A(C2H2)/col-TF3A-DAP-Seq(GSE60143)/Homer
+		224 of 506 (1e-6) SPL14(SBP)/col-SPL14-DAP-Seq(GSE60143)/Homer
+		225 of 506 (1e-6) dof42(C2C2dof)/col-dof42-DAP-Seq(GSE60143)/Homer
+		226 of 506 (1e-6) At3g09600(MYBrelated)/colamp-At3g09600-DAP-Seq(GSE60143)/Homer
+		227 of 506 (1e-6) AT3G51470(DBP)/col-AT3G51470-DAP-Seq(GSE60143)/Homer
+		228 of 506 (1e-6) AT4G00250(GeBP)/col-AT4G00250-DAP-Seq(GSE60143)/Homer
+		229 of 506 (1e-6) WRKY50(WRKY)/col-WRKY50-DAP-Seq(GSE60143)/Homer
+		230 of 506 (1e-6) MYB88(MYB)/col-MYB88-DAP-Seq(GSE60143)/Homer
+		231 of 506 (1e-6) MYB56(MYB)/colamp-MYB56-DAP-Seq(GSE60143)/Homer
+		232 of 506 (1e-6) AT1G20910(ARID)/col-AT1G20910-DAP-Seq(GSE60143)/Homer
+		233 of 506 (1e-6) MYB94(MYB)/col-MYB94-DAP-Seq(GSE60143)/Homer
+		234 of 506 (1e-6) AIL7(AP2EREBP)/colamp-AIL7-DAP-Seq(GSE60143)/Homer
+		235 of 506 (1e-5) AT2G28920(ND)/col-AT2G28920-DAP-Seq(GSE60143)/Homer
+		236 of 506 (1e-5) ATHB33(ZFHD)/col-ATHB33-DAP-Seq(GSE60143)/Homer
+		237 of 506 (1e-5) ATHB24(ZFHD)/colamp-ATHB24-DAP-Seq(GSE60143)/Homer
+		238 of 506 (1e-5) At5g58900(MYBrelated)/colamp-At5g58900-DAP-Seq(GSE60143)/Homer
+		239 of 506 (1e-5) DREB2(AP2EREBP)/col-DREB2-DAP-Seq(GSE60143)/Homer
+		240 of 506 (1e-5) AtHB32(ZFHD)/col200-AtHB32-DAP-Seq(GSE60143)/Homer
+		241 of 506 (1e-5) MYB81(MYB)/col-MYB81-DAP-Seq(GSE60143)/Homer
+		242 of 506 (1e-5) At5g08520(MYBrelated)/colamp-At5g08520-DAP-Seq(GSE60143)/Homer
+		243 of 506 (1e-5) MYB96(MYB)/colamp-MYB96-DAP-Seq(GSE60143)/Homer
+		244 of 506 (1e-5) MYB70(MYB)/col-MYB70-DAP-Seq(GSE60143)/Homer
+		245 of 506 (1e-4) MYB73(MYB)/col-MYB73-DAP-Seq(GSE60143)/Homer
+		246 of 506 (1e-4) PLT1(AP2EREBP)/colamp-PLT1-DAP-Seq(GSE60143)/Homer
+		247 of 506 (1e-4) At3g11280(MYBrelated)/col-At3g11280-DAP-Seq(GSE60143)/Homer
+		248 of 506 (1e-4) E2FA(E2FDP)/colamp-E2FA-DAP-Seq(GSE60143)/Homer
+		249 of 506 (1e-4) ATHB34(ZFHD)/colamp-ATHB34-DAP-Seq(GSE60143)/Homer
+		250 of 506 (1e-4) LBD19(LOBAS2)/colamp-LBD19-DAP-Seq(GSE60143)/Homer
+		251 of 506 (1e-4) HAT2(Homeobox)/colamp-HAT2-DAP-Seq(GSE60143)/Homer
+		252 of 506 (1e-4) At1g49010(MYBrelated)/col-At1g49010-DAP-Seq(GSE60143)/Homer
+		253 of 506 (1e-4) ATHB15(HB)/col-ATHB15-DAP-Seq(GSE60143)/Homer
+		254 of 506 (1e-4) PTF1(TCP)/colamp-PTF1-DAP-Seq(GSE60143)/Homer
+		255 of 506 (1e-4) At5g04390(C2H2)/col200-At5g04390-DAP-Seq(GSE60143)/Homer
+		256 of 506 (1e-4) MYB105(MYB)/colamp-MYB105-DAP-Seq(GSE60143)/Homer
+		257 of 506 (1e-4) At5g05790(MYBrelated)/col-At5g05790-DAP-Seq(GSE60143)/Homer
+		258 of 506 (1e-4) ATHB23(ZFHD)/col-ATHB23-DAP-Seq(GSE60143)/Homer
+		259 of 506 (1e-4) ATHB25(ZFHD)/colamp-ATHB25-DAP-Seq(GSE60143)/Homer
+		260 of 506 (1e-4) SVP(MADS)/col-SVP-DAP-Seq(GSE60143)/Homer
+		261 of 506 (1e-4) EMB1789(C3H)/col-EMB1789-DAP-Seq(GSE60143)/Homer
+		262 of 506 (1e-4) LBD18(LOBAS2)/colamp-LBD18-DAP-Seq(GSE60143)/Homer
+		263 of 506 (1e-3) RIN(MADS)/Tomato-RIN-ChIP-Seq(GSE116581)/Homer
+		264 of 506 (1e-3) GTL1(Trihelix)/colamp-GTL1-DAP-Seq(GSE60143)/Homer
+		265 of 506 (1e-3) DDF2(AP2EREBP)/col-DDF2-DAP-Seq(GSE60143)/Homer
+		266 of 506 (1e-3) LCL1(MYBrelated)/colamp-LCL1-DAP-Seq(GSE60143)/Homer
+		267 of 506 (1e-3) SOC1(MADS)/Seedling-SOC1-ChIP-Seq(GSE45846)/Homer
+		268 of 506 (1e-3) DEAR2(AP2EREBP)/colamp-DEAR2-DAP-Seq(GSE60143)/Homer
+		269 of 506 (1e-3) bHLH28(bHLH)/col-bHLH28-DAP-Seq(GSE60143)/Homer
+		270 of 506 (1e-3) DREB19(AP2EREBP)/colamp-DREB19-DAP-Seq(GSE60143)/Homer
+		271 of 506 (1e-3) MYB3(MYB)/Arabidopsis-MYB3-ChIP-Seq(GSE80564)/Homer
+		272 of 506 (1e-3) HAT1(Homeobox)/col-HAT1-DAP-Seq(GSE60143)/Homer
+		273 of 506 (1e-3) SPL3(SBP)/colamp-SPL3-DAP-Seq(GSE60143)/Homer
+		274 of 506 (1e-3) KANADI1(Myb)/Seedling-KAN1-ChIP-Seq(GSE48081)/Homer
+		275 of 506 (1e-2) SRS7(SRS)/colamp-SRS7-DAP-Seq(GSE60143)/Homer
+		276 of 506 (1e-2) AGL6(MADS)/col-AGL6-DAP-Seq(GSE60143)/Homer
+		277 of 506 (1e-2) CCA(Myb)/Arabidopsis-CCA.GFP-ChIP-Seq(GSE70533)/Homer
+		278 of 506 (1e-2) DEAR5(AP2EREBP)/col-DEAR5-DAP-Seq(GSE60143)/Homer
+		279 of 506 (1e-2) AGL63(MADS)/col-AGL63-DAP-Seq(GSE60143)/Homer
+		280 of 506 (1e-2) GT2(Trihelix)/colamp-GT2-DAP-Seq(GSE60143)/Homer
+		281 of 506 (1e-2) ANAC083(NAC)/col-ANAC083-DAP-Seq(GSE60143)/Homer
+		282 of 506 (1e-2) PHV(HB)/col-PHV-DAP-Seq(GSE60143)/Homer
+		283 of 506 (1e-2) AT5G47660(Trihelix)/colamp-AT5G47660-DAP-Seq(GSE60143)/Homer
+		284 of 506 (1e-2) AT1G04880(ARID)/colamp-AT1G04880-DAP-Seq(GSE60143)/Homer
+		285 of 506 (1e-2) STZ(C2H2)/colamp-STZ-DAP-Seq(GSE60143)/Homer
+		286 of 506 (1e-2) CUC2(NAC)/colamp-CUC2-DAP-Seq(GSE60143)/Homer
+		287 of 506 (1e-2) CDM1(C3H)/colamp-CDM1-DAP-Seq(GSE60143)/Homer
+	----------------------------------------------------------
+	De novo motif finding (HOMER)
+
+	Scanning input files...
+	Parsing sequences...
+	|0%                                   50%                                  100%|
+	===============================================================================
+	Total number of Oligos: 32896
+	Autoadjustment for sequence coverage in background: 1.00x
+
+	Oligos: 32896 of 34497 max
+	Tree  : 66916 of 172485 max
+	Optimizing memory usage...
+	Cache length = 11180
+	Using binomial scoring
+
+	Global Optimization Phase: Looking for enriched oligos with up to 2 mismatches...
+
+	Screening oligos 32896 (allowing 0 mismatches):
+	|0%                                   50%                                  100%|
+	================================================================================
+		0.13% skipped, 99.87% checked (32853 of 32896), of those checked:
+		0.13% not in target, 0.00% increased p-value, 0.00% high p-value
+
+	Screening oligos 32896 (allowing 1 mismatches):
+	|0%                                   50%                                  100%|
+	================================================================================
+		0.13% skipped, 99.87% checked (32853 of 32896), of those checked:
+		0.00% not in target, 55.79% increased p-value, 57.02% high p-value
+
+	Screening oligos 32896 (allowing 2 mismatches):
+	|0%                                   50%                                  100%|
+	================================================================================
+		69.28% skipped, 30.72% checked (10107 of 32896), of those checked:
+		0.00% not in target, 10.70% increased p-value, 0.00% high p-value
+	Reading input files...
+	50000 total sequences read
+	Cache length = 11180
+	Using binomial scoring
+
+	Local Optimization Phase:
+	1 of 25 Initial Sequence: GACACGTG... (-3613.797)
+		Round 1: -4787.26 GACACGTG T:7538.0(36.66%),B:2890.7(8.87%),P:1e-2079
+		Round 2: -4787.26 GACACGTG T:7538.0(36.66%),B:2890.7(8.87%),P:1e-2079
+		=Final=: -3182.96 GACACGTG T:4417.0(26.76%),B:2091.6(6.72%),P:1e-1382
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	2 of 25 Initial Sequence: TCTCTCTC... (-759.847)
+		Round 1: -816.09 TCTCTCTC T:7646.0(37.07%),B:8169.0(23.10%),P:1e-354
+		Round 2: -816.09 TCTCTCTC T:7646.0(37.07%),B:8169.0(23.10%),P:1e-354
+		=Final=: -226.55 TCTCTCTC T:1907.0(11.55%),B:2177.2(7.00%),P:1e-98
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	3 of 25 Initial Sequence: ATGGGCCC... (-312.335)
+		Round 1: -543.32 ATGGGCCC T:3721.0(20.18%),B:3737.0(11.32%),P:1e-235
+		Round 2: -627.01 ATKGGCCC T:6407.0(32.17%),B:7111.4(20.44%),P:1e-272
+		Round 3: -627.01 ATKGGCCC T:6407.0(32.17%),B:7111.4(20.44%),P:1e-272
+		=Final=: -278.74 ATKGGCCC T:2172.0(13.16%),B:2433.8(7.82%),P:1e-121
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	4 of 25 Initial Sequence: CGCGCGTG... (-170.742)
+		Round 1: -316.37 CGCGCGTG T:3384.0(18.54%),B:3908.8(11.81%),P:1e-137
+		Round 2: -362.12 CGCGYGTV T:3673.0(19.95%),B:4171.7(12.55%),P:1e-157
+		Round 3: -362.12 CGCGYGTV T:3673.0(19.95%),B:4171.7(12.55%),P:1e-157
+		=Final=: -158.45 CGCGYGTV T:2435.0(14.75%),B:3218.8(10.35%),P:1e-68
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	5 of 25 Initial Sequence: CATTTGTC... (-139.202)
+		Round 1: -236.99 CATYTGKC T:585.0(3.48%),B:382.7(1.22%),P:1e-102
+		Round 2: -240.11 CAKTTGTC T:662.0(3.93%),B:461.4(1.47%),P:1e-104
+		Round 3: -284.94 CAGCTGGC T:1499.0(8.68%),B:1403.3(4.41%),P:1e-123
+		Round 4: -309.06 CARTTGTC T:1124.0(6.58%),B:899.9(2.85%),P:1e-134
+		Round 5: -411.38 CARCTGKC T:1649.0(9.51%),B:1370.0(4.31%),P:1e-178
+		Round 6: -411.38 CARCTGKC T:1649.0(9.51%),B:1370.0(4.31%),P:1e-178
+		=Final=: -301.15 CARCTGKC T:1319.0(7.99%),B:1193.8(3.84%),P:1e-130
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	6 of 25 Initial Sequence: ACCAATCA... (-104.388)
+		Round 1: -196.50 ACCAATCA T:1436.0(8.33%),B:1514.7(4.75%),P:1e-85
+		Round 2: -198.53 ACCAATMA T:1679.0(9.67%),B:1846.2(5.76%),P:1e-86
+		Round 3: -201.37 ACCAATCA T:1283.0(7.48%),B:1294.4(4.08%),P:1e-87
+		Round 4: -201.37 ACCAATCA T:1283.0(7.48%),B:1294.4(4.08%),P:1e-87
+		=Final=: -198.14 ACCAATCA T:1231.0(7.46%),B:1270.7(4.08%),P:1e-86
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	7 of 25 Initial Sequence: TCCTTTTT... (-103.010)
+		Round 1: -195.09 BCCTTTTW T:10680.0(47.64%),B:15946.0(40.11%),P:1e-84
+		Round 2: -195.09 BCCTTTTW T:10680.0(47.64%),B:15946.0(40.11%),P:1e-84
+		=Final=: -125.21 BCCTTTTW T:5743.0(34.79%),B:9076.3(29.18%),P:1e-54
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	8 of 25 Initial Sequence: TGACACGT... (-70.921)
+		Round 1: -108.54 TGACACGT T:1551.0(8.97%),B:1955.0(6.09%),P:1e-47
+		Round 2: -108.54 TGACACGT T:1551.0(8.97%),B:1955.0(6.09%),P:1e-47
+		=Final=: -105.03 TGACACGT T:1437.0(8.71%),B:1841.0(5.92%),P:1e-45
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	9 of 25 Initial Sequence: TTATTATT... (-66.721)
+		Round 1: -108.00 TTATTATT T:4527.0(23.99%),B:6712.1(19.41%),P:1e-46
+		Round 2: -144.73 TAATTATT T:5793.0(29.60%),B:8487.7(23.88%),P:1e-62
+		Round 3: -152.27 THWTTAAT T:9227.0(42.82%),B:14024.1(36.29%),P:1e-66
+		Round 4: -203.23 TWATTAAT T:9689.0(44.40%),B:14278.6(36.81%),P:1e-88
+		Round 5: -203.23 TWATTAAT T:9689.0(44.40%),B:14278.6(36.81%),P:1e-88
+		=Final=: -116.94 TWATTAAT T:4647.0(28.15%),B:7184.8(23.10%),P:1e-50
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	10 of 25 Initial Sequence: ATGGGCTT... (-40.131)
+		Round 1: -86.71 WTGGGCTN T:846.0(5.00%),B:980.9(3.10%),P:1e-37
+		Round 2: -96.16 GTGGGCTW T:946.0(5.57%),B:1098.0(3.47%),P:1e-41
+		Round 3: -96.16 GTGGGCTW T:946.0(5.57%),B:1098.0(3.47%),P:1e-41
+		=Final=: -72.77 GTGGGCTW T:818.0(4.96%),B:999.3(3.21%),P:1e-31
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	11 of 25 Initial Sequence: CGTTGGAT... (-39.140)
+		Round 1: -66.37 CGTTGGAT T:462.0(2.76%),B:488.8(1.56%),P:1e-28
+		Round 2: -67.36 CGTTGGAT T:1486.0(8.61%),B:2041.3(6.35%),P:1e-29
+		Round 3: -70.91 SRTYSGHT T:1635.0(9.43%),B:2259.5(7.01%),P:1e-30
+		Round 4: -70.91 SRTYSGHT T:1635.0(9.43%),B:2259.5(7.01%),P:1e-30
+		=Final=: -65.86 SRTYSGHT T:1478.0(8.95%),B:2076.3(6.67%),P:1e-28
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	12 of 25 Initial Sequence: GGCCCAGT... (-34.560)
+		Round 1: -15.91 GGCCCAGT T:364.0(2.18%),B:516.8(1.65%),P:1e-6
+		Round 2: -44.23 GGCCCACT T:862.0(5.09%),B:1166.5(3.68%),P:1e-19
+		Round 3: -44.23 GGCCCACT T:862.0(5.09%),B:1166.5(3.68%),P:1e-19
+		=Final=: -37.53 GGCCCACT T:821.0(4.97%),B:1148.6(3.69%),P:1e-16
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	13 of 25 Initial Sequence: CTTTTGTC... (-31.145)
+		Round 1: -55.86 CTTTTGTC T:1518.0(8.79%),B:2157.7(6.70%),P:1e-24
+		Round 2: -55.86 CTTTTGTC T:1518.0(8.79%),B:2157.7(6.70%),P:1e-24
+		=Final=: -52.52 CTTTTGTC T:883.0(5.35%),B:1177.9(3.79%),P:1e-22
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	14 of 25 Initial Sequence: TGTCGGTT... (-26.156)
+		Round 1: -54.17 TGTCGGTT T:1033.0(6.07%),B:1389.6(4.37%),P:1e-23
+		Round 2: -59.39 TGTCGGKT T:356.0(2.13%),B:361.0(1.15%),P:1e-25
+		Round 3: -70.69 TGTCGGKH T:486.0(2.90%),B:511.4(1.63%),P:1e-30
+		Round 4: -70.69 TGTCGGKH T:486.0(2.90%),B:511.4(1.63%),P:1e-30
+		=Final=: -64.12 TGTCGGKH T:461.0(2.79%),B:498.8(1.60%),P:1e-27
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	15 of 25 Initial Sequence: ATCCACGT... (-24.023)
+		Round 1: -46.65 ATCCACGT T:280.0(1.68%),B:284.7(0.91%),P:1e-20
+		Round 2: -46.65 ATCCACGT T:280.0(1.68%),B:284.7(0.91%),P:1e-20
+		=Final=: -43.90 ATCCACGT T:274.0(1.66%),B:284.2(0.91%),P:1e-19
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	16 of 25 Initial Sequence: TGACTTTT... (-23.133)
+		Round 1: -47.08 TGACTTTT T:2627.0(14.71%),B:4065.9(12.25%),P:1e-20
+		Round 2: -59.53 TWACTTTT T:1918.0(10.97%),B:2784.3(8.56%),P:1e-25
+		Round 3: -59.53 TWACTTTT T:1918.0(10.97%),B:2784.3(8.56%),P:1e-25
+		=Final=: -51.30 TWACTTTT T:1763.0(10.68%),B:2636.0(8.47%),P:1e-22
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	17 of 25 Initial Sequence: TACTCTCT... (-22.769)
+		Round 1: -31.51 TACTCTCT T:295.0(1.77%),B:344.1(1.10%),P:1e-13
+		Round 2: -31.51 TACTCTCT T:295.0(1.77%),B:344.1(1.10%),P:1e-13
+		=Final=: -32.69 TACTCTCT T:293.0(1.78%),B:340.6(1.09%),P:1e-14
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	18 of 25 Initial Sequence: CCGATTGG... (-21.923)
+		Round 1: -21.92 CCGATTGG T:11.0(0.07%),B:1.1(0.00%),P:1e-9
+		Round 2: -21.92 CCGATTGG T:11.0(0.07%),B:1.1(0.00%),P:1e-9
+		=Final=: -24.96 CCGATTGG T:11.0(0.07%),B:1.1(0.00%),P:1e-10
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	19 of 25 Initial Sequence: ATGCATGC... (-21.557)
+		Round 1: -63.45 ATGCATGC T:343.0(2.06%),B:333.0(1.06%),P:1e-27
+		Round 2: -63.45 ATGCATGC T:343.0(2.06%),B:333.0(1.06%),P:1e-27
+		=Final=: -36.80 ATGCATGC T:257.0(1.56%),B:277.6(0.89%),P:1e-15
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	20 of 25 Initial Sequence: AGCTGTCA... (-20.607)
+		Round 1: -13.62 AGCTGTCA T:1123.0(6.58%),B:1826.1(5.70%),P:1e-5
+		Round 2: -28.32 AGCTGTCA T:1415.0(8.22%),B:2182.6(6.78%),P:1e-12
+		Round 3: -40.18 VTCTGTCA T:1245.0(7.27%),B:1809.2(5.65%),P:1e-17
+		Round 4: -40.18 VTCTGTCA T:1245.0(7.27%),B:1809.2(5.65%),P:1e-17
+		=Final=: -35.59 VTCTGTCA T:1061.0(6.43%),B:1555.7(5.00%),P:1e-15
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	21 of 25 Initial Sequence: TGACCCAC... (-15.884)
+		Round 1: -31.62 TGACCGAC T:106.0(0.64%),B:87.0(0.28%),P:1e-13
+		Round 2: -31.62 TGACCGAC T:106.0(0.64%),B:87.0(0.28%),P:1e-13
+		=Final=: -28.42 TGACCGAC T:102.0(0.62%),B:87.0(0.28%),P:1e-12
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	22 of 25 Initial Sequence: CGACACGA... (-15.803)
+		Round 1: -19.66 CGACACGA T:90.0(0.54%),B:85.3(0.27%),P:1e-8
+		Round 2: -21.06 CGACACGC T:45.0(0.27%),B:29.9(0.09%),P:1e-9
+		Round 3: -21.06 CGACACGC T:45.0(0.27%),B:29.9(0.09%),P:1e-9
+		=Final=: -18.97 CGACACGC T:43.0(0.26%),B:29.9(0.10%),P:1e-8
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	23 of 25 Initial Sequence: CGTAACGT... (-15.118)
+		Round 1: -36.09 CGTAACGY T:263.0(1.58%),B:285.6(0.91%),P:1e-15
+		Round 2: -36.09 CGTAACGY T:263.0(1.58%),B:285.6(0.91%),P:1e-15
+		=Final=: -27.93 CGTAACGY T:111.0(0.67%),B:98.0(0.32%),P:1e-12
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	24 of 25 Initial Sequence: AAAGTGAG... (-14.850)
+		Round 1: -17.41 AAAGTGAG T:100.0(0.60%),B:103.9(0.33%),P:1e-7
+		Round 2: -21.66 AAAGTKGG T:481.0(2.87%),B:674.9(2.14%),P:1e-9
+		Round 3: -21.66 AAAGTKGG T:481.0(2.87%),B:674.9(2.14%),P:1e-9
+		=Final=: -21.79 AAAGTKGG T:475.0(2.88%),B:667.7(2.15%),P:1e-9
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+	25 of 25 Initial Sequence: CCACGTCA... (-14.709)
+		Round 1: -36.89 CCACGTCA T:184.0(1.11%),B:175.7(0.56%),P:1e-16
+		Round 2: -36.89 CCACGTCA T:184.0(1.11%),B:175.7(0.56%),P:1e-16
+		=Final=: -35.02 CCACGTCA T:180.0(1.09%),B:175.7(0.56%),P:1e-15
+		Performing exhaustive masking of motif...
+		Reprioritizing potential motifs...
+
+	Finalizing Enrichment Statistics (new in v3.4)
+	Reading input files...
+	50000 total sequences read
+	Cache length = 11180
+	Using binomial scoring
+	Checking enrichment of 25 motif(s)
+	|0%                                    50%                                  100%|
+	=================================================================================
+	Output in file: .//homerMotifs.motifs8
+
+	(Motifs in homer2 format)
+	Determining similar motifs... 25 reduced to 11 motifs
+	Outputing HTML and sequence logos for motif comparison...
+	Checking de novo motifs against known motifs...
+	Formatting HTML page...
+		1 of 11 (1e-1382) similar to ABI5/MA0931.1/Jaspar(0.981)
+		2 of 11 (1e-133) similar to OJ1581_H09.2/MA1031.1/Jaspar(0.880)
+		3 of 11 (1e-108) similar to PCF/Arabidopsis-Promoters/Homer(0.906)
+		4 of 11 (1e-105) similar to POL004.1_CCAAT-box/Jaspar(0.867)
+		5 of 11 (1e-102) similar to FRS9(ND)/col-FRS9-DAP-Seq(GSE60143)/Homer(0.923)
+		6 of 11 (1e-80) similar to OBP3(C2C2dof)/col-OBP3-DAP-Seq(GSE60143)/Homer(0.938)
+		7 of 11 (1e-73) similar to AtGRF6(GRF)/col-AtGRF6-DAP-Seq(GSE60143)/Homer(0.813)
+		8 of 11 (1e-65) similar to HDG1/MA1369.1/Jaspar(0.820)
+		9 of 11 (1e-64) similar to GATA20/MA1324.1/Jaspar(0.666)
+		10 of 11 (1e-21) similar to MYB119/MA1176.1/Jaspar(0.856)
+		11 of 11 (1e-19) similar to ABI3/MA0564.1/Jaspar(0.932)
+	Job finished - if results look good, please send beer to ..
+
+	Cleaning up tmp files...
+
+
+Peaks analysis with HOMER succesfully done. 
+
+The promoter length is 1000
+[1] "Promotor length:"
+[1] 1000
+[1] "Narrow peaks:"
+[1] "../../peak_calling/replicate_1_peaks.narrowPeak"
+[1] "Peaks summits:"
+[1] "../../peak_calling/replicate_1_summits.bed"
+
+ChIPseeker v1.26.2  For help: https://guangchuangyu.github.io/software/ChIPseeker
+
+If you use ChIPseeker in published research, please cite:
+Guangchuang Yu, Li-Gen Wang, Qing-Yu He. ChIPseeker: an R/Bioconductor package for ChIP peak annotation, comparison and visualization. Bioinformatics 2015, 31(14):2382-2383
+Loading required package: GenomicFeatures
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: GenomicRanges
+Loading required package: AnnotationDbi
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘ballgown’
+
+The following object is masked from ‘package:base’:
+
+    structure
+
+>> preparing features information...		 2022-01-28 21:34:12 
+>> identifying nearest features...		 2022-01-28 21:34:13 
+>> calculating distance from peak to TSS...	 2022-01-28 21:34:14 
+>> assigning genomic annotation...		 2022-01-28 21:34:14 
+>> assigning chromosome lengths			 2022-01-28 21:34:33 
+>> done...					 2022-01-28 21:34:33 
+  seqnames start   end width strand                 V4  V5 V6      V7       V8
+1        1  1414  1694   281      * replicate_1_peak_1  79  . 3.73091  9.36243
+2        1  2986  3449   464      * replicate_1_peak_2 103  . 3.49580 11.78700
+3        1 16492 16862   371      * replicate_1_peak_3  44  . 2.28514  5.68615
+4        1 20547 21538   992      * replicate_1_peak_4 154  . 3.55703 17.08600
+5        1 22128 23361  1234      * replicate_1_peak_5 327  . 5.12586 34.71360
+6        1 33165 34024   860      * replicate_1_peak_6 119  . 2.87043 13.51910
+        V9 V10        annotation geneChr geneStart geneEnd geneLength
+1  7.96909 136 Distal Intergenic       1      3631    5899       2269
+2 10.30690 208          Promoter       1      3631    5899       2269
+3  4.45957 140 Distal Intergenic       1     11649   13714       2066
+4 15.44770 518 Distal Intergenic       1     23146   31227       8082
+5 32.72710 490          Promoter       1     23146   31227       8082
+6 11.98220 430          Promoter       1     31170   33153       1984
+  geneStrand    geneId transcriptId distanceToTSS
+1          1 AT1G01010  AT1G01010.1         -1937
+2          1 AT1G01010  AT1G01010.1          -182
+3          2 AT1G01030  AT1G01030.1         -2778
+4          1 AT1G01040  AT1G01040.1         -1608
+5          1 AT1G01040  AT1G01040.1             0
+6          2 AT1G01050  AT1G01050.1           -12
+clusterProfiler v3.18.1  For help: https://guangchuangyu.github.io/software/clusterProfiler
+
+If you use clusterProfiler in published research, please cite:
+Guangchuang Yu, Li-Gen Wang, Yanyan Han, Qing-Yu He. clusterProfiler: an R package for comparing biological themes among gene clusters. OMICS: A Journal of Integrative Biology. 2012, 16(5):284-287.
+
+Attaching package: ‘clusterProfiler’
+
+The following object is masked from ‘package:AnnotationDbi’:
+
+    select
+
+The following object is masked from ‘package:IRanges’:
+
+    slice
+
+The following object is masked from ‘package:S4Vectors’:
+
+    rename
+
+The following object is masked from ‘package:stats’:
+
+    filter
+
+
+           ONTOLOGY         ID                                  Description
+GO:0036293       BP GO:0036293          response to decreased oxygen levels
+GO:0001666       BP GO:0001666                          response to hypoxia
+GO:0070482       BP GO:0070482                    response to oxygen levels
+GO:0071456       BP GO:0071456                 cellular response to hypoxia
+GO:0036294       BP GO:0036294 cellular response to decreased oxygen levels
+GO:0071453       BP GO:0071453           cellular response to oxygen levels
+           GeneRatio   BgRatio       pvalue     p.adjust       qvalue
+GO:0036293 201/10293 270/22094 7.010277e-21 1.194723e-17 8.219226e-18
+GO:0001666 198/10293 266/22094 1.400620e-20 1.194723e-17 8.219226e-18
+GO:0070482 201/10293 271/22094 1.467719e-20 1.194723e-17 8.219226e-18
+GO:0071456 177/10293 239/22094 3.696864e-18 1.765746e-15 1.214764e-15
+GO:0036294 178/10293 241/22094 4.761898e-18 1.765746e-15 1.214764e-15
+GO:0071453 178/10293 241/22094 4.761898e-18 1.765746e-15 1.214764e-15
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              geneID
+GO:0036293 AT1G01720/AT1G02360/AT1G03220/AT1G03610/AT1G07135/AT1G07150/AT1G07400/AT1G07870/AT1G09070/AT1G13260/AT1G14200/AT1G15010/AT1G17290/AT1G18300/AT1G19530/AT1G22220/AT1G23310/AT1G23710/AT1G25550/AT1G25560/AT1G26270/AT1G26800/AT1G27730/AT1G28760/AT1G30040/AT1G31812/AT1G32928/AT1G33055/AT1G34370/AT1G35140/AT1G43850/AT1G53840/AT1G53910/AT1G54050/AT1G55810/AT1G59660/AT1G59860/AT1G61340/AT1G63090/AT1G64280/AT1G66180/AT1G67360/AT1G68620/AT1G68670/AT1G68690/AT1G69890/AT1G72360/AT1G72430/AT1G72920/AT1G72940/AT1G73010/AT1G73500/AT1G74310/AT1G74940/AT1G76600/AT1G76650/AT1G76680/AT1G77120/AT1G78070/AT1G78850/AT2G01150/AT2G01180/AT2G14247/AT2G15890/AT2G16060/AT2G18670/AT2G22500/AT2G26190/AT2G26560/AT2G26660/AT2G32200/AT2G32210/AT2G33585/AT2G36220/AT2G36460/AT2G40000/AT2G40140/AT2G41010/AT2G41090/AT2G41100/AT2G41430/AT2G43430/AT2G44800/AT2G46400/AT2G46500/AT2G47520/AT3G01090/AT3G02040/AT3G02550/AT3G02555/AT3G03270/AT3G04640/AT3G05120/AT3G06435/AT3G07350/AT3G08720/AT3G10040/AT3G11490/AT3G13310/AT3G14100/AT3G14230/AT3G15210/AT3G18290/AT3G20770/AT3G22550/AT3G23150/AT3G23170/AT3G25250/AT3G27220/AT3G28910/AT3G30775/AT3G43190/AT3G46230/AT3G47720/AT3G48090/AT3G49780/AT3G50440/AT3G52800/AT3G55980/AT3G56880/AT3G60520/AT3G62410/AT4G01250/AT4G01360/AT4G10265/AT4G11660/AT4G12720/AT4G13395/AT4G16660/AT4G17230/AT4G20380/AT4G22780/AT4G24110/AT4G24230/AT4G26520/AT4G27280/AT4G27450/AT4G27460/AT4G27470/AT4G27657/AT4G27780/AT4G29780/AT4G30280/AT4G30370/AT4G30440/AT4G32480/AT4G32551/AT4G33070/AT4G34131/AT4G34150/AT4G37710/AT4G37840/AT4G38470/AT5G03380/AT5G03730/AT5G04340/AT5G05410/AT5G06320/AT5G12020/AT5G13190/AT5G15120/AT5G19120/AT5G19240/AT5G19550/AT5G20230/AT5G20250/AT5G20790/AT5G20830/AT5G24590/AT5G25110/AT5G25250/AT5G27420/AT5G27630/AT5G37670/AT5G39890/AT5G41080/AT5G42200/AT5G42380/AT5G44730/AT5G45340/AT5G45630/AT5G47060/AT5G47910/AT5G49190/AT5G54470/AT5G54940/AT5G54960/AT5G57090/AT5G57380/AT5G57560/AT5G58070/AT5G58120/AT5G59820/AT5G62520/AT5G63130/AT5G63790/AT5G64260/AT5G64905/AT5G65207/AT5G66650/AT5G66985
+GO:0001666                               AT1G01720/AT1G02360/AT1G03220/AT1G03610/AT1G07135/AT1G07150/AT1G07400/AT1G07870/AT1G09070/AT1G13260/AT1G14200/AT1G15010/AT1G17290/AT1G18300/AT1G19530/AT1G22220/AT1G23310/AT1G23710/AT1G25550/AT1G25560/AT1G26270/AT1G26800/AT1G27730/AT1G28760/AT1G30040/AT1G31812/AT1G32928/AT1G33055/AT1G34370/AT1G35140/AT1G43850/AT1G53840/AT1G53910/AT1G54050/AT1G55810/AT1G59660/AT1G59860/AT1G61340/AT1G63090/AT1G64280/AT1G66180/AT1G67360/AT1G68620/AT1G68670/AT1G68690/AT1G69890/AT1G72360/AT1G72430/AT1G72920/AT1G72940/AT1G73010/AT1G73500/AT1G74310/AT1G74940/AT1G76600/AT1G76650/AT1G76680/AT1G77120/AT1G78070/AT1G78850/AT2G01150/AT2G01180/AT2G14247/AT2G15890/AT2G16060/AT2G18670/AT2G22500/AT2G26190/AT2G26560/AT2G26660/AT2G32200/AT2G32210/AT2G33585/AT2G36220/AT2G36460/AT2G40000/AT2G40140/AT2G41010/AT2G41090/AT2G41100/AT2G41430/AT2G44800/AT2G46400/AT2G46500/AT2G47520/AT3G01090/AT3G02040/AT3G02550/AT3G02555/AT3G03270/AT3G04640/AT3G05120/AT3G06435/AT3G07350/AT3G08720/AT3G10040/AT3G13310/AT3G14100/AT3G14230/AT3G15210/AT3G18290/AT3G20770/AT3G22550/AT3G23150/AT3G23170/AT3G25250/AT3G27220/AT3G28910/AT3G30775/AT3G43190/AT3G46230/AT3G47720/AT3G48090/AT3G49780/AT3G50440/AT3G52800/AT3G55980/AT3G56880/AT3G60520/AT4G01250/AT4G01360/AT4G10265/AT4G11660/AT4G12720/AT4G13395/AT4G16660/AT4G17230/AT4G20380/AT4G22780/AT4G24110/AT4G24230/AT4G26520/AT4G27280/AT4G27450/AT4G27460/AT4G27470/AT4G27657/AT4G27780/AT4G29780/AT4G30280/AT4G30370/AT4G30440/AT4G32480/AT4G32551/AT4G33070/AT4G34131/AT4G34150/AT4G37710/AT4G37840/AT4G38470/AT5G03380/AT5G03730/AT5G04340/AT5G05410/AT5G06320/AT5G12020/AT5G13190/AT5G15120/AT5G19120/AT5G19240/AT5G19550/AT5G20230/AT5G20250/AT5G20790/AT5G20830/AT5G24590/AT5G25110/AT5G25250/AT5G27420/AT5G27630/AT5G37670/AT5G39890/AT5G41080/AT5G42200/AT5G42380/AT5G44730/AT5G45340/AT5G45630/AT5G47060/AT5G47910/AT5G49190/AT5G54470/AT5G54940/AT5G54960/AT5G57090/AT5G57380/AT5G57560/AT5G58070/AT5G58120/AT5G59820/AT5G62520/AT5G63130/AT5G63790/AT5G64260/AT5G64905/AT5G65207/AT5G66650/AT5G66985
+GO:0070482 AT1G01720/AT1G02360/AT1G03220/AT1G03610/AT1G07135/AT1G07150/AT1G07400/AT1G07870/AT1G09070/AT1G13260/AT1G14200/AT1G15010/AT1G17290/AT1G18300/AT1G19530/AT1G22220/AT1G23310/AT1G23710/AT1G25550/AT1G25560/AT1G26270/AT1G26800/AT1G27730/AT1G28760/AT1G30040/AT1G31812/AT1G32928/AT1G33055/AT1G34370/AT1G35140/AT1G43850/AT1G53840/AT1G53910/AT1G54050/AT1G55810/AT1G59660/AT1G59860/AT1G61340/AT1G63090/AT1G64280/AT1G66180/AT1G67360/AT1G68620/AT1G68670/AT1G68690/AT1G69890/AT1G72360/AT1G72430/AT1G72920/AT1G72940/AT1G73010/AT1G73500/AT1G74310/AT1G74940/AT1G76600/AT1G76650/AT1G76680/AT1G77120/AT1G78070/AT1G78850/AT2G01150/AT2G01180/AT2G14247/AT2G15890/AT2G16060/AT2G18670/AT2G22500/AT2G26190/AT2G26560/AT2G26660/AT2G32200/AT2G32210/AT2G33585/AT2G36220/AT2G36460/AT2G40000/AT2G40140/AT2G41010/AT2G41090/AT2G41100/AT2G41430/AT2G43430/AT2G44800/AT2G46400/AT2G46500/AT2G47520/AT3G01090/AT3G02040/AT3G02550/AT3G02555/AT3G03270/AT3G04640/AT3G05120/AT3G06435/AT3G07350/AT3G08720/AT3G10040/AT3G11490/AT3G13310/AT3G14100/AT3G14230/AT3G15210/AT3G18290/AT3G20770/AT3G22550/AT3G23150/AT3G23170/AT3G25250/AT3G27220/AT3G28910/AT3G30775/AT3G43190/AT3G46230/AT3G47720/AT3G48090/AT3G49780/AT3G50440/AT3G52800/AT3G55980/AT3G56880/AT3G60520/AT3G62410/AT4G01250/AT4G01360/AT4G10265/AT4G11660/AT4G12720/AT4G13395/AT4G16660/AT4G17230/AT4G20380/AT4G22780/AT4G24110/AT4G24230/AT4G26520/AT4G27280/AT4G27450/AT4G27460/AT4G27470/AT4G27657/AT4G27780/AT4G29780/AT4G30280/AT4G30370/AT4G30440/AT4G32480/AT4G32551/AT4G33070/AT4G34131/AT4G34150/AT4G37710/AT4G37840/AT4G38470/AT5G03380/AT5G03730/AT5G04340/AT5G05410/AT5G06320/AT5G12020/AT5G13190/AT5G15120/AT5G19120/AT5G19240/AT5G19550/AT5G20230/AT5G20250/AT5G20790/AT5G20830/AT5G24590/AT5G25110/AT5G25250/AT5G27420/AT5G27630/AT5G37670/AT5G39890/AT5G41080/AT5G42200/AT5G42380/AT5G44730/AT5G45340/AT5G45630/AT5G47060/AT5G47910/AT5G49190/AT5G54470/AT5G54940/AT5G54960/AT5G57090/AT5G57380/AT5G57560/AT5G58070/AT5G58120/AT5G59820/AT5G62520/AT5G63130/AT5G63790/AT5G64260/AT5G64905/AT5G65207/AT5G66650/AT5G66985
+GO:0071456                                                                                                                                                                                                                                                 AT1G01720/AT1G02360/AT1G03220/AT1G03610/AT1G07135/AT1G07150/AT1G07400/AT1G07870/AT1G09070/AT1G13260/AT1G14200/AT1G15010/AT1G17290/AT1G18300/AT1G19530/AT1G22220/AT1G23710/AT1G25550/AT1G25560/AT1G26270/AT1G26800/AT1G27730/AT1G28760/AT1G30040/AT1G32928/AT1G33055/AT1G34370/AT1G35140/AT1G53840/AT1G54050/AT1G55810/AT1G59660/AT1G59860/AT1G61340/AT1G63090/AT1G66180/AT1G67360/AT1G68620/AT1G68670/AT1G68690/AT1G69890/AT1G72360/AT1G72430/AT1G72920/AT1G72940/AT1G73010/AT1G73500/AT1G74310/AT1G74940/AT1G76600/AT1G76650/AT1G76680/AT1G77120/AT1G78070/AT1G78850/AT2G01150/AT2G01180/AT2G14247/AT2G15890/AT2G16060/AT2G18670/AT2G22500/AT2G26190/AT2G26560/AT2G26660/AT2G32200/AT2G32210/AT2G33585/AT2G36220/AT2G36460/AT2G40000/AT2G40140/AT2G41010/AT2G41090/AT2G41100/AT2G41430/AT2G44800/AT2G46400/AT2G46500/AT2G47520/AT3G02040/AT3G02550/AT3G02555/AT3G03270/AT3G04640/AT3G05120/AT3G06435/AT3G07350/AT3G08720/AT3G10040/AT3G13310/AT3G14100/AT3G15210/AT3G18290/AT3G22550/AT3G23150/AT3G23170/AT3G25250/AT3G27220/AT3G30775/AT3G43190/AT3G46230/AT3G47720/AT3G49780/AT3G50440/AT3G52800/AT3G55980/AT3G56880/AT3G60520/AT4G01250/AT4G01360/AT4G10265/AT4G11660/AT4G12720/AT4G13395/AT4G16660/AT4G17230/AT4G22780/AT4G24110/AT4G24230/AT4G27280/AT4G27450/AT4G27460/AT4G27470/AT4G27657/AT4G29780/AT4G30280/AT4G30370/AT4G30440/AT4G32480/AT4G33070/AT4G34131/AT4G34150/AT4G37710/AT4G38470/AT5G03380/AT5G04340/AT5G05410/AT5G06320/AT5G12020/AT5G13190/AT5G15120/AT5G19120/AT5G19240/AT5G19550/AT5G20230/AT5G20250/AT5G20790/AT5G20830/AT5G24590/AT5G25250/AT5G27420/AT5G37670/AT5G39890/AT5G41080/AT5G42200/AT5G42380/AT5G44730/AT5G45340/AT5G45630/AT5G47060/AT5G47910/AT5G54470/AT5G54940/AT5G54960/AT5G57560/AT5G58070/AT5G58120/AT5G59820/AT5G62520/AT5G63130/AT5G63790/AT5G64260/AT5G64905/AT5G65207/AT5G66650/AT5G66985
+GO:0036294                                                                                                                                                                                                                                       AT1G01720/AT1G02360/AT1G03220/AT1G03610/AT1G07135/AT1G07150/AT1G07400/AT1G07870/AT1G09070/AT1G13260/AT1G14200/AT1G15010/AT1G17290/AT1G18300/AT1G19530/AT1G22220/AT1G23710/AT1G25550/AT1G25560/AT1G26270/AT1G26800/AT1G27730/AT1G28760/AT1G30040/AT1G32928/AT1G33055/AT1G34370/AT1G35140/AT1G53840/AT1G54050/AT1G55810/AT1G59660/AT1G59860/AT1G61340/AT1G63090/AT1G66180/AT1G67360/AT1G68620/AT1G68670/AT1G68690/AT1G69890/AT1G72360/AT1G72430/AT1G72920/AT1G72940/AT1G73010/AT1G73500/AT1G74310/AT1G74940/AT1G76600/AT1G76650/AT1G76680/AT1G77120/AT1G78070/AT1G78850/AT2G01150/AT2G01180/AT2G14247/AT2G15890/AT2G16060/AT2G18670/AT2G22500/AT2G26190/AT2G26560/AT2G26660/AT2G32200/AT2G32210/AT2G33585/AT2G36220/AT2G36460/AT2G40000/AT2G40140/AT2G41010/AT2G41090/AT2G41100/AT2G41430/AT2G44800/AT2G46400/AT2G46500/AT2G47520/AT3G02040/AT3G02550/AT3G02555/AT3G03270/AT3G04640/AT3G05120/AT3G06435/AT3G07350/AT3G08720/AT3G10040/AT3G13310/AT3G14100/AT3G15210/AT3G18290/AT3G22550/AT3G23150/AT3G23170/AT3G25250/AT3G27220/AT3G30775/AT3G43190/AT3G46230/AT3G47720/AT3G49780/AT3G50440/AT3G52800/AT3G55980/AT3G56880/AT3G60520/AT3G62410/AT4G01250/AT4G01360/AT4G10265/AT4G11660/AT4G12720/AT4G13395/AT4G16660/AT4G17230/AT4G22780/AT4G24110/AT4G24230/AT4G27280/AT4G27450/AT4G27460/AT4G27470/AT4G27657/AT4G29780/AT4G30280/AT4G30370/AT4G30440/AT4G32480/AT4G33070/AT4G34131/AT4G34150/AT4G37710/AT4G38470/AT5G03380/AT5G04340/AT5G05410/AT5G06320/AT5G12020/AT5G13190/AT5G15120/AT5G19120/AT5G19240/AT5G19550/AT5G20230/AT5G20250/AT5G20790/AT5G20830/AT5G24590/AT5G25250/AT5G27420/AT5G37670/AT5G39890/AT5G41080/AT5G42200/AT5G42380/AT5G44730/AT5G45340/AT5G45630/AT5G47060/AT5G47910/AT5G54470/AT5G54940/AT5G54960/AT5G57560/AT5G58070/AT5G58120/AT5G59820/AT5G62520/AT5G63130/AT5G63790/AT5G64260/AT5G64905/AT5G65207/AT5G66650/AT5G66985
+GO:0071453                                                                                                                                                                                                                                       AT1G01720/AT1G02360/AT1G03220/AT1G03610/AT1G07135/AT1G07150/AT1G07400/AT1G07870/AT1G09070/AT1G13260/AT1G14200/AT1G15010/AT1G17290/AT1G18300/AT1G19530/AT1G22220/AT1G23710/AT1G25550/AT1G25560/AT1G26270/AT1G26800/AT1G27730/AT1G28760/AT1G30040/AT1G32928/AT1G33055/AT1G34370/AT1G35140/AT1G53840/AT1G54050/AT1G55810/AT1G59660/AT1G59860/AT1G61340/AT1G63090/AT1G66180/AT1G67360/AT1G68620/AT1G68670/AT1G68690/AT1G69890/AT1G72360/AT1G72430/AT1G72920/AT1G72940/AT1G73010/AT1G73500/AT1G74310/AT1G74940/AT1G76600/AT1G76650/AT1G76680/AT1G77120/AT1G78070/AT1G78850/AT2G01150/AT2G01180/AT2G14247/AT2G15890/AT2G16060/AT2G18670/AT2G22500/AT2G26190/AT2G26560/AT2G26660/AT2G32200/AT2G32210/AT2G33585/AT2G36220/AT2G36460/AT2G40000/AT2G40140/AT2G41010/AT2G41090/AT2G41100/AT2G41430/AT2G44800/AT2G46400/AT2G46500/AT2G47520/AT3G02040/AT3G02550/AT3G02555/AT3G03270/AT3G04640/AT3G05120/AT3G06435/AT3G07350/AT3G08720/AT3G10040/AT3G13310/AT3G14100/AT3G15210/AT3G18290/AT3G22550/AT3G23150/AT3G23170/AT3G25250/AT3G27220/AT3G30775/AT3G43190/AT3G46230/AT3G47720/AT3G49780/AT3G50440/AT3G52800/AT3G55980/AT3G56880/AT3G60520/AT3G62410/AT4G01250/AT4G01360/AT4G10265/AT4G11660/AT4G12720/AT4G13395/AT4G16660/AT4G17230/AT4G22780/AT4G24110/AT4G24230/AT4G27280/AT4G27450/AT4G27460/AT4G27470/AT4G27657/AT4G29780/AT4G30280/AT4G30370/AT4G30440/AT4G32480/AT4G33070/AT4G34131/AT4G34150/AT4G37710/AT4G38470/AT5G03380/AT5G04340/AT5G05410/AT5G06320/AT5G12020/AT5G13190/AT5G15120/AT5G19120/AT5G19240/AT5G19550/AT5G20230/AT5G20250/AT5G20790/AT5G20830/AT5G24590/AT5G25250/AT5G27420/AT5G37670/AT5G39890/AT5G41080/AT5G42200/AT5G42380/AT5G44730/AT5G45340/AT5G45630/AT5G47060/AT5G47910/AT5G54470/AT5G54940/AT5G54960/AT5G57560/AT5G58070/AT5G58120/AT5G59820/AT5G62520/AT5G63130/AT5G63790/AT5G64260/AT5G64905/AT5G65207/AT5G66650/AT5G66985
+           Count
+GO:0036293   201
+GO:0001666   198
+GO:0070482   201
+GO:0071456   177
+GO:0036294   178
+GO:0071453   178
+The promoter length is 1000
+[1] "Promotor length:"
+[1] 1000
+[1] "Narrow peaks:"
+[1] "../../peak_calling/replicate_2_peaks.narrowPeak"
+[1] "Peaks summits:"
+[1] "../../peak_calling/replicate_2_summits.bed"
+
+ChIPseeker v1.26.2  For help: https://guangchuangyu.github.io/software/ChIPseeker
+
+If you use ChIPseeker in published research, please cite:
+Guangchuang Yu, Li-Gen Wang, Qing-Yu He. ChIPseeker: an R/Bioconductor package for ChIP peak annotation, comparison and visualization. Bioinformatics 2015, 31(14):2382-2383
+Loading required package: GenomicFeatures
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: GenomicRanges
+Loading required package: AnnotationDbi
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘ballgown’
+
+The following object is masked from ‘package:base’:
+
+    structure
+
+>> preparing features information...		 2022-01-28 21:36:28 
+>> identifying nearest features...		 2022-01-28 21:36:29 
+>> calculating distance from peak to TSS...	 2022-01-28 21:36:29 
+>> assigning genomic annotation...		 2022-01-28 21:36:29 
+>> assigning chromosome lengths			 2022-01-28 21:36:40 
+>> done...					 2022-01-28 21:36:40 
+  seqnames start   end width strand                 V4   V5 V6       V7
+1        1  2866  3455   590      * replicate_2_peak_1   48  .  2.30854
+2        1  8466  8899   434      * replicate_2_peak_2   22  .  1.92541
+3        1 20574 21635  1062      * replicate_2_peak_3  186  .  4.19747
+4        1 22147 23358  1212      * replicate_2_peak_4  386  .  5.47879
+5        1 33266 33734   469      * replicate_2_peak_5   99  .  2.78611
+6        1 37597 38478   882      * replicate_2_peak_6 1295  . 10.31500
+         V8        V9 V10        annotation geneChr geneStart geneEnd
+1   6.14862   4.81063 268          Promoter       1      3631    5899
+2   3.33363   2.20478 192          Promoter       1      5928    8737
+3  20.46200  18.61190 385 Distal Intergenic       1     23146   31227
+4  40.92680  38.66160 390          Promoter       1     23146   31227
+5  11.57290   9.98501 253          Promoter       1     31170   33153
+6 133.03800 129.53200 386          Promoter       1     33379   37757
+  geneLength geneStrand    geneId transcriptId distanceToTSS
+1       2269          1 AT1G01010  AT1G01010.1          -176
+2       2810          2 AT1G01020  AT1G01020.1             0
+3       8082          1 AT1G01040  AT1G01040.1         -1511
+4       8082          1 AT1G01040  AT1G01040.1             0
+5       1984          2 AT1G01050  AT1G01050.1          -113
+6       4379          2 AT1G01060  AT1G01060.3             0
+clusterProfiler v3.18.1  For help: https://guangchuangyu.github.io/software/clusterProfiler
+
+If you use clusterProfiler in published research, please cite:
+Guangchuang Yu, Li-Gen Wang, Yanyan Han, Qing-Yu He. clusterProfiler: an R package for comparing biological themes among gene clusters. OMICS: A Journal of Integrative Biology. 2012, 16(5):284-287.
+
+Attaching package: ‘clusterProfiler’
+
+The following object is masked from ‘package:AnnotationDbi’:
+
+    select
+
+The following object is masked from ‘package:IRanges’:
+
+    slice
+
+The following object is masked from ‘package:S4Vectors’:
+
+    rename
+
+The following object is masked from ‘package:stats’:
+
+    filter
+
+
+           ONTOLOGY         ID                                  Description
+GO:0001666       BP GO:0001666                          response to hypoxia
+GO:0036293       BP GO:0036293          response to decreased oxygen levels
+GO:0070482       BP GO:0070482                    response to oxygen levels
+GO:0071456       BP GO:0071456                 cellular response to hypoxia
+GO:0036294       BP GO:0036294 cellular response to decreased oxygen levels
+GO:0071453       BP GO:0071453           cellular response to oxygen levels
+           GeneRatio   BgRatio       pvalue     p.adjust       qvalue
+GO:0001666  193/8681 266/22094 1.961881e-28 3.365381e-25 2.393115e-25
+GO:0036293  195/8681 270/22094 2.757379e-28 3.365381e-25 2.393115e-25
+GO:0070482  195/8681 271/22094 6.034833e-28 4.910342e-25 3.491733e-25
+GO:0071456  173/8681 239/22094 1.973094e-25 9.496812e-23 6.753161e-23
+GO:0036294  174/8681 241/22094 2.334325e-25 9.496812e-23 6.753161e-23
+GO:0071453  174/8681 241/22094 2.334325e-25 9.496812e-23 6.753161e-23
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  geneID
+GO:0001666                     AT1G01720/AT1G02360/AT1G03220/AT1G03610/AT1G07135/AT1G07150/AT1G07870/AT1G09070/AT1G13260/AT1G13360/AT1G14200/AT1G14540/AT1G15010/AT1G17290/AT1G18300/AT1G19530/AT1G22220/AT1G23310/AT1G23710/AT1G25550/AT1G25560/AT1G26270/AT1G26800/AT1G27730/AT1G28760/AT1G30040/AT1G31812/AT1G32928/AT1G33055/AT1G34370/AT1G35140/AT1G43800/AT1G43850/AT1G53840/AT1G53910/AT1G54050/AT1G55810/AT1G59860/AT1G61340/AT1G63090/AT1G66180/AT1G67360/AT1G68620/AT1G68670/AT1G68690/AT1G69890/AT1G72430/AT1G72920/AT1G72940/AT1G73010/AT1G73500/AT1G74310/AT1G74940/AT1G76600/AT1G76650/AT1G76680/AT1G77120/AT1G78070/AT1G78850/AT2G01150/AT2G01180/AT2G14247/AT2G15890/AT2G16060/AT2G18670/AT2G22500/AT2G26190/AT2G26560/AT2G26660/AT2G32200/AT2G32700/AT2G33585/AT2G36220/AT2G36460/AT2G40000/AT2G40140/AT2G41010/AT2G41090/AT2G41100/AT2G41430/AT2G44800/AT2G46400/AT2G46500/AT2G47520/AT3G01090/AT3G02040/AT3G02550/AT3G02555/AT3G03270/AT3G05120/AT3G06435/AT3G07350/AT3G08720/AT3G10020/AT3G10040/AT3G13310/AT3G14100/AT3G14230/AT3G15210/AT3G18290/AT3G20770/AT3G22550/AT3G23150/AT3G23170/AT3G25250/AT3G27220/AT3G28910/AT3G30775/AT3G43190/AT3G46080/AT3G46230/AT3G47720/AT3G48090/AT3G50440/AT3G52800/AT3G55980/AT3G56880/AT3G60520/AT4G01250/AT4G01360/AT4G10265/AT4G11660/AT4G12720/AT4G13395/AT4G16660/AT4G17230/AT4G20380/AT4G22780/AT4G24110/AT4G26520/AT4G27280/AT4G27450/AT4G27460/AT4G27470/AT4G27657/AT4G27780/AT4G29780/AT4G30370/AT4G30440/AT4G32480/AT4G32551/AT4G33070/AT4G33560/AT4G34131/AT4G34150/AT4G37840/AT4G38470/AT5G03380/AT5G03730/AT5G04340/AT5G05410/AT5G06320/AT5G12020/AT5G13190/AT5G15120/AT5G19120/AT5G19240/AT5G19550/AT5G20250/AT5G20790/AT5G20830/AT5G24590/AT5G25110/AT5G27420/AT5G27630/AT5G37670/AT5G39890/AT5G41080/AT5G42050/AT5G42200/AT5G42380/AT5G44730/AT5G45340/AT5G45630/AT5G47060/AT5G47910/AT5G49190/AT5G54470/AT5G54490/AT5G54940/AT5G54960/AT5G57380/AT5G57560/AT5G58070/AT5G58120/AT5G59820/AT5G62520/AT5G63130/AT5G63790/AT5G64260/AT5G64905/AT5G66650/AT5G66985
+GO:0036293 AT1G01720/AT1G02360/AT1G03220/AT1G03610/AT1G07135/AT1G07150/AT1G07870/AT1G09070/AT1G13260/AT1G13360/AT1G14200/AT1G14540/AT1G15010/AT1G17290/AT1G18300/AT1G19530/AT1G22220/AT1G23310/AT1G23710/AT1G25550/AT1G25560/AT1G26270/AT1G26800/AT1G27730/AT1G28760/AT1G30040/AT1G31812/AT1G32928/AT1G33055/AT1G34370/AT1G35140/AT1G43800/AT1G43850/AT1G53840/AT1G53910/AT1G54050/AT1G55810/AT1G59860/AT1G61340/AT1G63090/AT1G66180/AT1G67360/AT1G68620/AT1G68670/AT1G68690/AT1G69890/AT1G72430/AT1G72920/AT1G72940/AT1G73010/AT1G73500/AT1G74310/AT1G74940/AT1G76600/AT1G76650/AT1G76680/AT1G77120/AT1G78070/AT1G78850/AT2G01150/AT2G01180/AT2G14247/AT2G15890/AT2G16060/AT2G18670/AT2G22500/AT2G26190/AT2G26560/AT2G26660/AT2G32200/AT2G32700/AT2G33585/AT2G36220/AT2G36460/AT2G40000/AT2G40140/AT2G41010/AT2G41090/AT2G41100/AT2G41430/AT2G43430/AT2G44800/AT2G46400/AT2G46500/AT2G47520/AT3G01090/AT3G02040/AT3G02550/AT3G02555/AT3G03270/AT3G05120/AT3G06435/AT3G07350/AT3G08720/AT3G10020/AT3G10040/AT3G13310/AT3G14100/AT3G14230/AT3G15210/AT3G18290/AT3G20770/AT3G22550/AT3G23150/AT3G23170/AT3G25250/AT3G27220/AT3G28910/AT3G30775/AT3G43190/AT3G46080/AT3G46230/AT3G47720/AT3G48090/AT3G50440/AT3G52800/AT3G55980/AT3G56880/AT3G60520/AT3G62410/AT4G01250/AT4G01360/AT4G10265/AT4G11660/AT4G12720/AT4G13395/AT4G16660/AT4G17230/AT4G20380/AT4G22780/AT4G24110/AT4G26520/AT4G27280/AT4G27450/AT4G27460/AT4G27470/AT4G27657/AT4G27780/AT4G29780/AT4G30370/AT4G30440/AT4G32480/AT4G32551/AT4G33070/AT4G33560/AT4G34131/AT4G34150/AT4G37840/AT4G38470/AT5G03380/AT5G03730/AT5G04340/AT5G05410/AT5G06320/AT5G12020/AT5G13190/AT5G15120/AT5G19120/AT5G19240/AT5G19550/AT5G20250/AT5G20790/AT5G20830/AT5G24590/AT5G25110/AT5G27420/AT5G27630/AT5G37670/AT5G39890/AT5G41080/AT5G42050/AT5G42200/AT5G42380/AT5G44730/AT5G45340/AT5G45630/AT5G47060/AT5G47910/AT5G49190/AT5G54470/AT5G54490/AT5G54940/AT5G54960/AT5G57380/AT5G57560/AT5G58070/AT5G58120/AT5G59820/AT5G62520/AT5G63130/AT5G63790/AT5G64260/AT5G64905/AT5G66650/AT5G66985
+GO:0070482 AT1G01720/AT1G02360/AT1G03220/AT1G03610/AT1G07135/AT1G07150/AT1G07870/AT1G09070/AT1G13260/AT1G13360/AT1G14200/AT1G14540/AT1G15010/AT1G17290/AT1G18300/AT1G19530/AT1G22220/AT1G23310/AT1G23710/AT1G25550/AT1G25560/AT1G26270/AT1G26800/AT1G27730/AT1G28760/AT1G30040/AT1G31812/AT1G32928/AT1G33055/AT1G34370/AT1G35140/AT1G43800/AT1G43850/AT1G53840/AT1G53910/AT1G54050/AT1G55810/AT1G59860/AT1G61340/AT1G63090/AT1G66180/AT1G67360/AT1G68620/AT1G68670/AT1G68690/AT1G69890/AT1G72430/AT1G72920/AT1G72940/AT1G73010/AT1G73500/AT1G74310/AT1G74940/AT1G76600/AT1G76650/AT1G76680/AT1G77120/AT1G78070/AT1G78850/AT2G01150/AT2G01180/AT2G14247/AT2G15890/AT2G16060/AT2G18670/AT2G22500/AT2G26190/AT2G26560/AT2G26660/AT2G32200/AT2G32700/AT2G33585/AT2G36220/AT2G36460/AT2G40000/AT2G40140/AT2G41010/AT2G41090/AT2G41100/AT2G41430/AT2G43430/AT2G44800/AT2G46400/AT2G46500/AT2G47520/AT3G01090/AT3G02040/AT3G02550/AT3G02555/AT3G03270/AT3G05120/AT3G06435/AT3G07350/AT3G08720/AT3G10020/AT3G10040/AT3G13310/AT3G14100/AT3G14230/AT3G15210/AT3G18290/AT3G20770/AT3G22550/AT3G23150/AT3G23170/AT3G25250/AT3G27220/AT3G28910/AT3G30775/AT3G43190/AT3G46080/AT3G46230/AT3G47720/AT3G48090/AT3G50440/AT3G52800/AT3G55980/AT3G56880/AT3G60520/AT3G62410/AT4G01250/AT4G01360/AT4G10265/AT4G11660/AT4G12720/AT4G13395/AT4G16660/AT4G17230/AT4G20380/AT4G22780/AT4G24110/AT4G26520/AT4G27280/AT4G27450/AT4G27460/AT4G27470/AT4G27657/AT4G27780/AT4G29780/AT4G30370/AT4G30440/AT4G32480/AT4G32551/AT4G33070/AT4G33560/AT4G34131/AT4G34150/AT4G37840/AT4G38470/AT5G03380/AT5G03730/AT5G04340/AT5G05410/AT5G06320/AT5G12020/AT5G13190/AT5G15120/AT5G19120/AT5G19240/AT5G19550/AT5G20250/AT5G20790/AT5G20830/AT5G24590/AT5G25110/AT5G27420/AT5G27630/AT5G37670/AT5G39890/AT5G41080/AT5G42050/AT5G42200/AT5G42380/AT5G44730/AT5G45340/AT5G45630/AT5G47060/AT5G47910/AT5G49190/AT5G54470/AT5G54490/AT5G54940/AT5G54960/AT5G57380/AT5G57560/AT5G58070/AT5G58120/AT5G59820/AT5G62520/AT5G63130/AT5G63790/AT5G64260/AT5G64905/AT5G66650/AT5G66985
+GO:0071456                                                                                                                                                                                                                             AT1G01720/AT1G02360/AT1G03220/AT1G03610/AT1G07135/AT1G07150/AT1G07870/AT1G09070/AT1G13260/AT1G13360/AT1G14200/AT1G14540/AT1G15010/AT1G17290/AT1G18300/AT1G19530/AT1G22220/AT1G23710/AT1G25550/AT1G25560/AT1G26270/AT1G26800/AT1G27730/AT1G28760/AT1G30040/AT1G32928/AT1G33055/AT1G34370/AT1G35140/AT1G43800/AT1G53840/AT1G54050/AT1G55810/AT1G59860/AT1G61340/AT1G63090/AT1G66180/AT1G67360/AT1G68620/AT1G68670/AT1G68690/AT1G69890/AT1G72430/AT1G72920/AT1G72940/AT1G73010/AT1G73500/AT1G74310/AT1G74940/AT1G76600/AT1G76650/AT1G76680/AT1G77120/AT1G78070/AT1G78850/AT2G01150/AT2G01180/AT2G14247/AT2G15890/AT2G16060/AT2G18670/AT2G22500/AT2G26190/AT2G26560/AT2G26660/AT2G32200/AT2G33585/AT2G36220/AT2G36460/AT2G40000/AT2G40140/AT2G41010/AT2G41090/AT2G41100/AT2G41430/AT2G44800/AT2G46400/AT2G46500/AT2G47520/AT3G02040/AT3G02550/AT3G02555/AT3G03270/AT3G05120/AT3G06435/AT3G07350/AT3G08720/AT3G10020/AT3G10040/AT3G13310/AT3G14100/AT3G15210/AT3G18290/AT3G22550/AT3G23150/AT3G23170/AT3G25250/AT3G27220/AT3G30775/AT3G43190/AT3G46080/AT3G46230/AT3G47720/AT3G50440/AT3G52800/AT3G55980/AT3G56880/AT3G60520/AT4G01250/AT4G01360/AT4G10265/AT4G11660/AT4G12720/AT4G13395/AT4G16660/AT4G17230/AT4G22780/AT4G24110/AT4G27280/AT4G27450/AT4G27460/AT4G27470/AT4G27657/AT4G29780/AT4G30370/AT4G30440/AT4G32480/AT4G33070/AT4G33560/AT4G34131/AT4G34150/AT4G38470/AT5G03380/AT5G04340/AT5G05410/AT5G06320/AT5G12020/AT5G13190/AT5G15120/AT5G19120/AT5G19240/AT5G19550/AT5G20250/AT5G20790/AT5G20830/AT5G24590/AT5G27420/AT5G37670/AT5G39890/AT5G41080/AT5G42050/AT5G42200/AT5G42380/AT5G44730/AT5G45340/AT5G45630/AT5G47060/AT5G47910/AT5G54470/AT5G54490/AT5G54940/AT5G54960/AT5G57560/AT5G58070/AT5G58120/AT5G59820/AT5G62520/AT5G63130/AT5G63790/AT5G64260/AT5G64905/AT5G66650/AT5G66985
+GO:0036294                                                                                                                                                                                                                   AT1G01720/AT1G02360/AT1G03220/AT1G03610/AT1G07135/AT1G07150/AT1G07870/AT1G09070/AT1G13260/AT1G13360/AT1G14200/AT1G14540/AT1G15010/AT1G17290/AT1G18300/AT1G19530/AT1G22220/AT1G23710/AT1G25550/AT1G25560/AT1G26270/AT1G26800/AT1G27730/AT1G28760/AT1G30040/AT1G32928/AT1G33055/AT1G34370/AT1G35140/AT1G43800/AT1G53840/AT1G54050/AT1G55810/AT1G59860/AT1G61340/AT1G63090/AT1G66180/AT1G67360/AT1G68620/AT1G68670/AT1G68690/AT1G69890/AT1G72430/AT1G72920/AT1G72940/AT1G73010/AT1G73500/AT1G74310/AT1G74940/AT1G76600/AT1G76650/AT1G76680/AT1G77120/AT1G78070/AT1G78850/AT2G01150/AT2G01180/AT2G14247/AT2G15890/AT2G16060/AT2G18670/AT2G22500/AT2G26190/AT2G26560/AT2G26660/AT2G32200/AT2G33585/AT2G36220/AT2G36460/AT2G40000/AT2G40140/AT2G41010/AT2G41090/AT2G41100/AT2G41430/AT2G44800/AT2G46400/AT2G46500/AT2G47520/AT3G02040/AT3G02550/AT3G02555/AT3G03270/AT3G05120/AT3G06435/AT3G07350/AT3G08720/AT3G10020/AT3G10040/AT3G13310/AT3G14100/AT3G15210/AT3G18290/AT3G22550/AT3G23150/AT3G23170/AT3G25250/AT3G27220/AT3G30775/AT3G43190/AT3G46080/AT3G46230/AT3G47720/AT3G50440/AT3G52800/AT3G55980/AT3G56880/AT3G60520/AT3G62410/AT4G01250/AT4G01360/AT4G10265/AT4G11660/AT4G12720/AT4G13395/AT4G16660/AT4G17230/AT4G22780/AT4G24110/AT4G27280/AT4G27450/AT4G27460/AT4G27470/AT4G27657/AT4G29780/AT4G30370/AT4G30440/AT4G32480/AT4G33070/AT4G33560/AT4G34131/AT4G34150/AT4G38470/AT5G03380/AT5G04340/AT5G05410/AT5G06320/AT5G12020/AT5G13190/AT5G15120/AT5G19120/AT5G19240/AT5G19550/AT5G20250/AT5G20790/AT5G20830/AT5G24590/AT5G27420/AT5G37670/AT5G39890/AT5G41080/AT5G42050/AT5G42200/AT5G42380/AT5G44730/AT5G45340/AT5G45630/AT5G47060/AT5G47910/AT5G54470/AT5G54490/AT5G54940/AT5G54960/AT5G57560/AT5G58070/AT5G58120/AT5G59820/AT5G62520/AT5G63130/AT5G63790/AT5G64260/AT5G64905/AT5G66650/AT5G66985
+GO:0071453                                                                                                                                                                                                                   AT1G01720/AT1G02360/AT1G03220/AT1G03610/AT1G07135/AT1G07150/AT1G07870/AT1G09070/AT1G13260/AT1G13360/AT1G14200/AT1G14540/AT1G15010/AT1G17290/AT1G18300/AT1G19530/AT1G22220/AT1G23710/AT1G25550/AT1G25560/AT1G26270/AT1G26800/AT1G27730/AT1G28760/AT1G30040/AT1G32928/AT1G33055/AT1G34370/AT1G35140/AT1G43800/AT1G53840/AT1G54050/AT1G55810/AT1G59860/AT1G61340/AT1G63090/AT1G66180/AT1G67360/AT1G68620/AT1G68670/AT1G68690/AT1G69890/AT1G72430/AT1G72920/AT1G72940/AT1G73010/AT1G73500/AT1G74310/AT1G74940/AT1G76600/AT1G76650/AT1G76680/AT1G77120/AT1G78070/AT1G78850/AT2G01150/AT2G01180/AT2G14247/AT2G15890/AT2G16060/AT2G18670/AT2G22500/AT2G26190/AT2G26560/AT2G26660/AT2G32200/AT2G33585/AT2G36220/AT2G36460/AT2G40000/AT2G40140/AT2G41010/AT2G41090/AT2G41100/AT2G41430/AT2G44800/AT2G46400/AT2G46500/AT2G47520/AT3G02040/AT3G02550/AT3G02555/AT3G03270/AT3G05120/AT3G06435/AT3G07350/AT3G08720/AT3G10020/AT3G10040/AT3G13310/AT3G14100/AT3G15210/AT3G18290/AT3G22550/AT3G23150/AT3G23170/AT3G25250/AT3G27220/AT3G30775/AT3G43190/AT3G46080/AT3G46230/AT3G47720/AT3G50440/AT3G52800/AT3G55980/AT3G56880/AT3G60520/AT3G62410/AT4G01250/AT4G01360/AT4G10265/AT4G11660/AT4G12720/AT4G13395/AT4G16660/AT4G17230/AT4G22780/AT4G24110/AT4G27280/AT4G27450/AT4G27460/AT4G27470/AT4G27657/AT4G29780/AT4G30370/AT4G30440/AT4G32480/AT4G33070/AT4G33560/AT4G34131/AT4G34150/AT4G38470/AT5G03380/AT5G04340/AT5G05410/AT5G06320/AT5G12020/AT5G13190/AT5G15120/AT5G19120/AT5G19240/AT5G19550/AT5G20250/AT5G20790/AT5G20830/AT5G24590/AT5G27420/AT5G37670/AT5G39890/AT5G41080/AT5G42050/AT5G42200/AT5G42380/AT5G44730/AT5G45340/AT5G45630/AT5G47060/AT5G47910/AT5G54470/AT5G54490/AT5G54940/AT5G54960/AT5G57560/AT5G58070/AT5G58120/AT5G59820/AT5G62520/AT5G63130/AT5G63790/AT5G64260/AT5G64905/AT5G66650/AT5G66985
+           Count
+GO:0001666   193
+GO:0036293   195
+GO:0070482   195
+GO:0071456   173
+GO:0036294   174
+GO:0071453   174

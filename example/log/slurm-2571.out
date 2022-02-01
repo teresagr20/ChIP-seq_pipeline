@@ -1,0 +1,150 @@
+6. PEAK CALLING
+------------------
+Peak calling with input sample
+INFO  @ Fri, 28 Jan 2022 21:09:32: 
+# Command line: callpeak -t ../../samples/chip_1/chip_1.bam -c ../../samples/input_1/input_1.bam -f BAM --outdir ./ -n replicate_1
+# ARGUMENTS LIST:
+# name = replicate_1
+# format = BAM
+# ChIP-seq file = ['../../samples/chip_1/chip_1.bam']
+# control file = ['../../samples/input_1/input_1.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 5.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is off
+ 
+INFO  @ Fri, 28 Jan 2022 21:09:32: #1 read tag files... 
+INFO  @ Fri, 28 Jan 2022 21:09:32: #1 read treatment tags... 
+INFO  @ Fri, 28 Jan 2022 21:09:34:  1000000 
+INFO  @ Fri, 28 Jan 2022 21:09:37:  2000000 
+INFO  @ Fri, 28 Jan 2022 21:09:40:  3000000 
+INFO  @ Fri, 28 Jan 2022 21:09:43:  4000000 
+INFO  @ Fri, 28 Jan 2022 21:09:45:  5000000 
+INFO  @ Fri, 28 Jan 2022 21:09:48:  6000000 
+INFO  @ Fri, 28 Jan 2022 21:09:51:  7000000 
+INFO  @ Fri, 28 Jan 2022 21:09:54:  8000000 
+INFO  @ Fri, 28 Jan 2022 21:09:57:  9000000 
+INFO  @ Fri, 28 Jan 2022 21:09:59:  10000000 
+INFO  @ Fri, 28 Jan 2022 21:10:01: 10027197 reads have been read. 
+INFO  @ Fri, 28 Jan 2022 21:10:01: #1.2 read input tags... 
+INFO  @ Fri, 28 Jan 2022 21:10:04:  1000000 
+INFO  @ Fri, 28 Jan 2022 21:10:07:  2000000 
+INFO  @ Fri, 28 Jan 2022 21:10:10:  3000000 
+INFO  @ Fri, 28 Jan 2022 21:10:13:  4000000 
+INFO  @ Fri, 28 Jan 2022 21:10:15:  5000000 
+INFO  @ Fri, 28 Jan 2022 21:10:18:  6000000 
+INFO  @ Fri, 28 Jan 2022 21:10:21:  7000000 
+INFO  @ Fri, 28 Jan 2022 21:10:24:  8000000 
+INFO  @ Fri, 28 Jan 2022 21:10:27:  9000000 
+INFO  @ Fri, 28 Jan 2022 21:10:29:  10000000 
+INFO  @ Fri, 28 Jan 2022 21:10:32:  11000000 
+INFO  @ Fri, 28 Jan 2022 21:10:35: 11738909 reads have been read. 
+INFO  @ Fri, 28 Jan 2022 21:10:35: #1 tag size is determined as 51 bps 
+INFO  @ Fri, 28 Jan 2022 21:10:35: #1 tag size = 51.0 
+INFO  @ Fri, 28 Jan 2022 21:10:35: #1  total tags in treatment: 10027197 
+INFO  @ Fri, 28 Jan 2022 21:10:35: #1 user defined the maximum tags... 
+INFO  @ Fri, 28 Jan 2022 21:10:35: #1 filter out redundant tags at the same location and the same strand by allowing at most 1 tag(s) 
+INFO  @ Fri, 28 Jan 2022 21:10:35: #1  tags after filtering in treatment: 8372450 
+INFO  @ Fri, 28 Jan 2022 21:10:35: #1  Redundant rate of treatment: 0.17 
+INFO  @ Fri, 28 Jan 2022 21:10:35: #1  total tags in control: 11738909 
+INFO  @ Fri, 28 Jan 2022 21:10:35: #1 user defined the maximum tags... 
+INFO  @ Fri, 28 Jan 2022 21:10:35: #1 filter out redundant tags at the same location and the same strand by allowing at most 1 tag(s) 
+INFO  @ Fri, 28 Jan 2022 21:10:35: #1  tags after filtering in control: 8125009 
+INFO  @ Fri, 28 Jan 2022 21:10:35: #1  Redundant rate of control: 0.31 
+INFO  @ Fri, 28 Jan 2022 21:10:35: #1 finished! 
+INFO  @ Fri, 28 Jan 2022 21:10:35: #2 Build Peak Model... 
+INFO  @ Fri, 28 Jan 2022 21:10:35: #2 looking for paired plus/minus strand peaks... 
+INFO  @ Fri, 28 Jan 2022 21:10:42: #2 number of paired peaks: 131725 
+INFO  @ Fri, 28 Jan 2022 21:10:42: start model_add_line... 
+INFO  @ Fri, 28 Jan 2022 21:10:44: start X-correlation... 
+INFO  @ Fri, 28 Jan 2022 21:10:44: end of X-cor 
+INFO  @ Fri, 28 Jan 2022 21:10:44: #2 finished! 
+INFO  @ Fri, 28 Jan 2022 21:10:44: #2 predicted fragment length is 261 bps 
+INFO  @ Fri, 28 Jan 2022 21:10:44: #2 alternative fragment length(s) may be 261 bps 
+INFO  @ Fri, 28 Jan 2022 21:10:44: #2.2 Generate R script for model : ./replicate_1_model.r 
+INFO  @ Fri, 28 Jan 2022 21:10:44: #3 Call peaks... 
+INFO  @ Fri, 28 Jan 2022 21:10:44: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 28 Jan 2022 21:11:58: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 28 Jan 2022 21:12:23: #4 Write output xls file... ./replicate_1_peaks.xls 
+INFO  @ Fri, 28 Jan 2022 21:12:23: #4 Write peak in narrowPeak format file... ./replicate_1_peaks.narrowPeak 
+INFO  @ Fri, 28 Jan 2022 21:12:23: #4 Write summits bed file... ./replicate_1_summits.bed 
+INFO  @ Fri, 28 Jan 2022 21:12:23: Done! 
+Peak calling with input sample
+INFO  @ Fri, 28 Jan 2022 21:12:23: 
+# Command line: callpeak -t ../../samples/chip_2/chip_2.bam -c ../../samples/input_2/input_2.bam -f BAM --outdir ./ -n replicate_2
+# ARGUMENTS LIST:
+# name = replicate_2
+# format = BAM
+# ChIP-seq file = ['../../samples/chip_2/chip_2.bam']
+# control file = ['../../samples/input_2/input_2.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 5.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is off
+ 
+INFO  @ Fri, 28 Jan 2022 21:12:23: #1 read tag files... 
+INFO  @ Fri, 28 Jan 2022 21:12:23: #1 read treatment tags... 
+INFO  @ Fri, 28 Jan 2022 21:12:26:  1000000 
+INFO  @ Fri, 28 Jan 2022 21:12:29:  2000000 
+INFO  @ Fri, 28 Jan 2022 21:12:31:  3000000 
+INFO  @ Fri, 28 Jan 2022 21:12:34:  4000000 
+INFO  @ Fri, 28 Jan 2022 21:12:37:  5000000 
+INFO  @ Fri, 28 Jan 2022 21:12:40:  6000000 
+INFO  @ Fri, 28 Jan 2022 21:12:43:  7000000 
+INFO  @ Fri, 28 Jan 2022 21:12:46: 7831017 reads have been read. 
+INFO  @ Fri, 28 Jan 2022 21:12:47: #1.2 read input tags... 
+INFO  @ Fri, 28 Jan 2022 21:12:49:  1000000 
+INFO  @ Fri, 28 Jan 2022 21:12:52:  2000000 
+INFO  @ Fri, 28 Jan 2022 21:12:55:  3000000 
+INFO  @ Fri, 28 Jan 2022 21:12:57:  4000000 
+INFO  @ Fri, 28 Jan 2022 21:13:00:  5000000 
+INFO  @ Fri, 28 Jan 2022 21:13:03:  6000000 
+INFO  @ Fri, 28 Jan 2022 21:13:06:  7000000 
+INFO  @ Fri, 28 Jan 2022 21:13:09:  8000000 
+INFO  @ Fri, 28 Jan 2022 21:13:11:  9000000 
+INFO  @ Fri, 28 Jan 2022 21:13:12: 9025519 reads have been read. 
+INFO  @ Fri, 28 Jan 2022 21:13:12: #1 tag size is determined as 51 bps 
+INFO  @ Fri, 28 Jan 2022 21:13:12: #1 tag size = 51.0 
+INFO  @ Fri, 28 Jan 2022 21:13:12: #1  total tags in treatment: 7831017 
+INFO  @ Fri, 28 Jan 2022 21:13:12: #1 user defined the maximum tags... 
+INFO  @ Fri, 28 Jan 2022 21:13:12: #1 filter out redundant tags at the same location and the same strand by allowing at most 1 tag(s) 
+INFO  @ Fri, 28 Jan 2022 21:13:12: #1  tags after filtering in treatment: 6849332 
+INFO  @ Fri, 28 Jan 2022 21:13:12: #1  Redundant rate of treatment: 0.13 
+INFO  @ Fri, 28 Jan 2022 21:13:12: #1  total tags in control: 9025519 
+INFO  @ Fri, 28 Jan 2022 21:13:12: #1 user defined the maximum tags... 
+INFO  @ Fri, 28 Jan 2022 21:13:12: #1 filter out redundant tags at the same location and the same strand by allowing at most 1 tag(s) 
+INFO  @ Fri, 28 Jan 2022 21:13:12: #1  tags after filtering in control: 6895103 
+INFO  @ Fri, 28 Jan 2022 21:13:12: #1  Redundant rate of control: 0.24 
+INFO  @ Fri, 28 Jan 2022 21:13:12: #1 finished! 
+INFO  @ Fri, 28 Jan 2022 21:13:12: #2 Build Peak Model... 
+INFO  @ Fri, 28 Jan 2022 21:13:12: #2 looking for paired plus/minus strand peaks... 
+INFO  @ Fri, 28 Jan 2022 21:13:18: #2 number of paired peaks: 129936 
+INFO  @ Fri, 28 Jan 2022 21:13:18: start model_add_line... 
+INFO  @ Fri, 28 Jan 2022 21:13:20: start X-correlation... 
+INFO  @ Fri, 28 Jan 2022 21:13:20: end of X-cor 
+INFO  @ Fri, 28 Jan 2022 21:13:20: #2 finished! 
+INFO  @ Fri, 28 Jan 2022 21:13:20: #2 predicted fragment length is 285 bps 
+INFO  @ Fri, 28 Jan 2022 21:13:20: #2 alternative fragment length(s) may be 285 bps 
+INFO  @ Fri, 28 Jan 2022 21:13:20: #2.2 Generate R script for model : ./replicate_2_model.r 
+INFO  @ Fri, 28 Jan 2022 21:13:20: #3 Call peaks... 
+INFO  @ Fri, 28 Jan 2022 21:13:20: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 28 Jan 2022 21:14:25: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 28 Jan 2022 21:14:46: #4 Write output xls file... ./replicate_2_peaks.xls 
+INFO  @ Fri, 28 Jan 2022 21:14:46: #4 Write peak in narrowPeak format file... ./replicate_2_peaks.narrowPeak 
+INFO  @ Fri, 28 Jan 2022 21:14:46: #4 Write summits bed file... ./replicate_2_summits.bed 
+INFO  @ Fri, 28 Jan 2022 21:14:46: Done! 
+Peak calling has finished
+Great job!
+Submitted batch job 2572

@@ -1,0 +1,37 @@
+5. QUALITY ANALISIS AND MAPPING TO REFERENCE GENOME
+------------------------------------------------------
+Started analysis of input_2.fq.gz
+Approx 5% complete for input_2.fq.gz
+Approx 10% complete for input_2.fq.gz
+Approx 15% complete for input_2.fq.gz
+Approx 20% complete for input_2.fq.gz
+Approx 25% complete for input_2.fq.gz
+Approx 30% complete for input_2.fq.gz
+Approx 35% complete for input_2.fq.gz
+Approx 40% complete for input_2.fq.gz
+Approx 45% complete for input_2.fq.gz
+Approx 50% complete for input_2.fq.gz
+Approx 55% complete for input_2.fq.gz
+Approx 60% complete for input_2.fq.gz
+Approx 65% complete for input_2.fq.gz
+Approx 70% complete for input_2.fq.gz
+Approx 75% complete for input_2.fq.gz
+Approx 80% complete for input_2.fq.gz
+Approx 85% complete for input_2.fq.gz
+Approx 90% complete for input_2.fq.gz
+Approx 95% complete for input_2.fq.gz
+Analysis complete for input_2.fq.gz
+9498011 reads; of these:
+  9498011 (100.00%) were unpaired; of these:
+    472492 (4.97%) aligned 0 times
+    6290500 (66.23%) aligned exactly 1 time
+    2735019 (28.80%) aligned >1 times
+95.03% overall alignment rate
+[bam_sort_core] merging from 2 files and 1 in-memory blocks...
+
+Mapping succesfully done. You're doing a great job
+
+Numbers of replicates processed are 2
+
+4
+Not all replicates have been processed. Please wait. Currently, 2 replicates processed
