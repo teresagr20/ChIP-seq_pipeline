@@ -154,7 +154,7 @@ Kanehisa M. et al (2021). KEGG: integrating viruses and cellular organisms. Nucl
 
 If you have any further questions, do not hesitate to ask the developers:
 
-Ángela Jiménez (angela21072000@gmail.com).
+Ángela Jiménez (angela21072000@gmail.com)
 Teresa González (teresaglez.2000@gmail.com)
 Jaime Hiniesta Valero (jaimehiva@gmail.com)
 Sebastián Flores Salva (asfloressalva@gmail.com)
