@@ -119,42 +119,60 @@ results: This folder contains the information of the results of the peak calling
 ### References
 
  * BOWTIE2:
+
 Langmead B. et al(2018). Scaling read aligners to hundreds of threads on general-purpose processors. Bioinformatics.
+
 Langmead B. et al (2012). Fast gapped-read alignment with Bowtie 2. Nature Methods. 4;9(4):357-9.
 
 * FASTQC:
+
 Andrews, S. (2010). FastQC: A Quality Control Tool for High Throughput Sequence Data [Online].
 SAMTOOLS:
+
 Li H. et al (2009) The Sequence alignment/map (SAM) format and SAMtools. Bioinformatics, 25, 2078-9.
 
 * MACS2:
+
 Zhang Y. et al (2008). Model-based Analysis of ChIP-Seq (MACS). Genome Biology, 9:R137.
 
 * HOMER:
+
 Heinz S., Benner C., Spann N., Bertolino E. et al. (2010) Simple Combinations of Lineage-Determining Transcription Factors Prime cis-Regulatory Elements Required for Macrophage and B Cell Identities. Mol. Cell. May 28;38(4):576-589.
 
 * R:
+
 R Core Team (2018). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL https://www.R-project.org/.
 
 * RStudio:
+
 RStudio Team (2020). RStudio: Integrated Development Environment for R. RStudio, PBC, Boston, MA. URL http://www.rstudio.com/.
 
 * Bioconductor packages for R analysis:
+
 ChIPseeker: Yu G. et al (2015). ChIPseeker: an R/Bioconductor package for ChIP peak annotation, comparison and visualization. Bioinformatics 2015, 31(14):2382-2383
+
 TxDb.Athaliana.BioMart.plantsmart28: Carlson M, Maintainer BP (2015). TxDb.Athaliana.BioMart.plantsmart28: Annotation package for TxDb object(s).
+
 Org.at.tair.db: Carlson M. (2019). org.At.tair.db: Genome wide annotation for Arabidopsis. R package version 3.8.2.
+
 DO.db: Li J (2015). DO.db: A set of annotation maps describing the entire Disease Ontology.
+
 ClusterProfiler: Yu G. et al (2012). clusterProfiler: an R package for comparing biological themes among gene clusters. OMICS: A Journal of Integrative Biology, 16(5):284-287
+
 Pathview: Luo, W and Brouwer C (2013). Pathview: an R/Bioconductor package for pathway-based data integration and visualization. Bioinformatics, 29(14), 1830-1831.
-KEGG:
+
+* KEGG:
+
 Kanehisa M. and Goto, S. (2000). KEGG: Kyoto Encyclopedia of Genes and Genomes. Nucleic Acids Res. 28, 27-30.
+
 Kanehisa M (2019). Toward understanding the origin and evolution of cellular organisms. Protein Sci. 28, 1947-1951.
+
 Kanehisa M. et al (2021). KEGG: integrating viruses and cellular organisms. Nucleic Acids Res. 49, D545-D551.
 
 
 If you have any further questions, do not hesitate to ask the developers:
 
-Ángela Jiménez (angela21072000@gmail.com)
+Ángela Jiménez (angela21072000@gmail.com).
 Teresa González (teresaglez.2000@gmail.com)
 Jaime Hiniesta Valero (jaimehiva@gmail.com)
 Sebastián Flores Salva (asfloressalva@gmail.com)
