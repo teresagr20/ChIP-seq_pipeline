@@ -40,7 +40,7 @@ mkdir  <TF’s folder>
 
 ```
 cd 
-git clone https://github.com/jaimehiva/ChIP-seq_pipeline
+git clone https://github.com/teresagr20/ChIP-seq_pipeline
 ```
  
   3. Copy the installation directory folder and the parameters.txt script to your <TF’s folder>.
