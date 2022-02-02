@@ -170,7 +170,8 @@ Kanehisa M (2019). Toward understanding the origin and evolution of cellular org
 Kanehisa M. et al (2021). KEGG: integrating viruses and cellular organisms. Nucleic Acids Res. 49, D545-D551.
 
 
-If you have any further questions, do not hesitate to ask the developers:
+
+**If you have any further questions, do not hesitate to ask the developers:**
 
 Ángela Jiménez (angela21072000@gmail.com)
 
