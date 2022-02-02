@@ -13,7 +13,7 @@ CSAR is composed of a sort of scripts with the capacity of automatically generat
 
 The correct functioning of the pipeline requires the previously installation of the following:
 
-* [FASTQC: A quality control tool for high throughput sequence data] (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+* [**FASTQC: A quality control tool for high throughput sequence data**] (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 * [Bowtie 2: an ultrafast and memory-efficient tool for aligning sequencing reads to long reference sequences] (http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
 * [Samtools: Reading/writing/editing/indexing/viewing SAM/BAM/CRAM format] (http://www.htslib.org/)
 * [MACS2: Model-based Analysis for ChIP-Seq] (https://pypi.org/project/MACS2/)
@@ -29,6 +29,7 @@ The correct functioning of the pipeline requires the previously installation of 
 * [The HOMER program and the information of the organism of study in format fq.gz.]
   + Please, make sure you add your script file to your PATH so that HOMER can produce the desired results.
 When installed, follow these steps:
+
 
   1. Create a folder called with your *TF’s name* in your home directory using the instruction mkdir.
 
