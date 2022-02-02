@@ -13,12 +13,11 @@ CSAR is composed of a sort of scripts with the capacity of automatically generat
 
 The correct functioning of the pipeline requires the previously installation of the following:
 
-* [**FASTQC: A quality control tool for high throughput sequence data**] (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
-* [Bowtie 2: an ultrafast and memory-efficient tool for aligning sequencing reads to long reference sequences] (http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
-* [Samtools: Reading/writing/editing/indexing/viewing SAM/BAM/CRAM format] (http://www.htslib.org/)
-* [MACS2: Model-based Analysis for ChIP-Seq] (https://pypi.org/project/MACS2/)
-* [R: free software environment for statistical computing and graphics with the following packages:]
-(https://www.r-project.org/)
+* [FASTQC: A quality control tool for high throughput sequence data](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+* [Bowtie 2: an ultrafast and memory-efficient tool for aligning sequencing reads to long reference sequences](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
+* [Samtools: Reading/writing/editing/indexing/viewing SAM/BAM/CRAM format](http://www.htslib.org/)
+* [MACS2: Model-based Analysis for ChIP-Seq](https://pypi.org/project/MACS2/)
+* [R: free software environment for statistical computing and graphics with the following packages:](https://www.r-project.org/)
   + ChIPseeker 
   + Ballgown
   + TxDB of the organism of study 
