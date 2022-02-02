@@ -26,6 +26,7 @@ The correct functioning of the pipeline requires the previously installation of 
   + pathview
  
 * The HOMER program and the information of the organism of study in format fq.gz.
+
 Please, make sure you add your script file to your PATH so that HOMER can produce the desired results.
 When installed, follow these steps:
 
