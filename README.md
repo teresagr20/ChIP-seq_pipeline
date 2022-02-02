@@ -19,7 +19,6 @@ The correct functioning of the pipeline requires the previously installation of 
 * [MACS2: Model-based Analysis for ChIP-Seq](https://pypi.org/project/MACS2/)
 * [R: free software environment for statistical computing and graphics with the following packages:](https://www.r-project.org/)
   + ChIPseeker 
-  + Ballgown
   + TxDB of the organism of study 
   + .db file of the organism of study (org.At.tair.db for Arabidopsis)
   + clusterProfiler
