@@ -21,7 +21,7 @@ if [ $# -ne 1 ];
 then
 	echo "Error: The number of parameters is wrong."
 	echo ""
-	echo "Usage: pandereta <param_file>"
+	echo "Usage: chip_seq_analysis <param_file>"
 	echo ""
 	echo "param_file: A file specifying the parameters for the ChIP-seq."
 	echo " 		   Data Analysis Pipeline. The folder test contains "
