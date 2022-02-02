@@ -1,0 +1,14 @@
+installation_directory: 
+working_directory: 
+folder_name: 
+genome: 
+annotation: 
+number_samples: 
+doble_samples: 
+chip_1: 
+input_1: 
+folder_scripts: 
+number_chain_end: 
+promoter_length: 
+transcription_factor: 
+selection: 
